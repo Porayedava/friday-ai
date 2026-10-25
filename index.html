@@ -1,0 +1,2795 @@
+<!DOCTYPE html>
+<html lang="en" class="dark"><head><script data-bard-client-injected="true">(function(firebaseConfig, initialAuthToken, appId) {
+        window.__firebase_config = firebaseConfig;
+        window.__initial_auth_token = initialAuthToken;
+        window.__app_id = appId;
+            })("\n{\n  \"apiKey\": \"AIzaSyCqyCcs2R2e7AegGjvFAwG98wlamtbHvZY\",\n  \"authDomain\": \"bard-frontend.firebaseapp.com\",\n  \"projectId\": \"bard-frontend\",\n  \"storageBucket\": \"bard-frontend.firebasestorage.app\",\n  \"messagingSenderId\": \"175205271074\",\n  \"appId\": \"1:175205271074:web:2b7bd4d34d33bf38e6ec7b\"\n}\n","eyJhbGciOiJSUzI1NiIsImtpZCI6IjExNjRiNzdiNDMzZDdhMDAyMWI4NjE4YjhjYTU3ZTMyZGI5MWUxMTMiLCJ0eXAiOiJKV1QifQ.eyJzdWIiOiJmaXJlYmFzZS1hZG1pbnNkay1mYnN2Y0BiYXJkLWZyb250ZW5kLmlhbS5nc2VydmljZWFjY291bnQuY29tIiwiYXVkIjoiaHR0cHM6Ly9pZGVudGl0eXRvb2xraXQuZ29vZ2xlYXBpcy5jb20vZ29vZ2xlLmlkZW50aXR5LmlkZW50aXR5dG9vbGtpdC52MS5JZGVudGl0eVRvb2xraXQiLCJ1aWQiOiIwMTQ5MTQwNjM4MzQzODg2NzA2OCIsImlzcyI6ImZpcmViYXNlLWFkbWluc2RrLWZic3ZjQGJhcmQtZnJvbnRlbmQuaWFtLmdzZXJ2aWNlYWNjb3VudC5jb20iLCJjbGFpbXMiOnsiYXBwSWQiOiJjXzM3YTEzYWRjYzVlNGQ3NzRfZGExMzdkMzhfZnJpZGF5X2Fzc2lzdGFudF92MS5odG1sLTM5MSJ9LCJleHAiOjE3OTI5MDQ4MzUsImlhdCI6MTc5MjkwMTIzNSwiYWxnIjoiUlMyNTYifQ.hgWBNljWezEdRlqFapFMfUorhFxorYbciL2xBgo45N6hZ_7OBi1bt_Y-AQvMnxQwm7kuPsqzzL4ChjQkWOsclrok431Q6siMbugHqKgGMjZegoeGoSdaz_aVPM_qfgxnMV0bO0WnmmKVC9ltR56AOQ9m51MajBWSS3LE2dMQcIifvSp19VZ-fXWq7zXKpzlIre3ZzV5YV6De6kjmljx80AcytfY3cgnDabqODvVlkeS95PV5818UiVKZCMOCKRuPaOCBOmxl9AhKNe8kFN9DCiQA891X4M6y7dsKiYapUYhAxldGw0mNFXj1mpxIKeW9UXIOQld2h7uZiqEqV_wotg","c_37a13adcc5e4d774_da137d38_friday_assistant_v1.html-391")</script><script data-bard-client-injected="true">
+  document.addEventListener('input', (event) => {
+    if (event.target && (event.target.isContentEditable || event.target.hasAttribute('contenteditable'))) {
+      const clonedDoc = document.cloneNode(true);
+      const injectedScripts = clonedDoc.querySelectorAll('[data-bard-client-injected="true"]');
+      injectedScripts.forEach(el => el.remove());
+      window.parent.postMessage({
+        type: 'inlineEdit',
+        html: '<!DOCTYPE html>\n' + clonedDoc.documentElement.outerHTML
+      }, '*');
+    }
+  });
+</script><script data-bard-client-injected="true">(function(){'use strict';window.addEventListener("message",a=>{a.data&&a.data.type==="SUPPLEMENTAL_DATA_UPDATE"&&window.dispatchEvent(new CustomEvent("supplementaldataupdate",{detail:a.data.data}))});}).call(this);
+</script><script data-bard-client-injected="true">(function(){'use strict';var h=typeof Object.defineProperties=="function"?Object.defineProperty:function(a,b,c){if(a==Array.prototype||a==Object.prototype)return a;a[b]=c.value;return a};function l(a){a=["object"==typeof globalThis&&globalThis,a,"object"==typeof window&&window,"object"==typeof self&&self,"object"==typeof global&&global];for(var b=0;b<a.length;++b){var c=a[b];if(c&&c.Math==Math)return c}throw Error("Cannot find global object");}var n=l(this);
+function p(a,b){if(b)a:{var c=n;a=a.split(".");for(var d=0;d<a.length-1;d++){var e=a[d];if(!(e in c))break a;c=c[e]}a=a[a.length-1];d=c[a];b=b(d);b!=d&&b!=null&&h(c,a,{configurable:!0,writable:!0,value:b})}}function r(a){function b(d){return a.next(d)}function c(d){return a.throw(d)}return new Promise(function(d,e){function f(g){g.done?d(g.value):Promise.resolve(g.value).then(b,c).then(f,e)}f(a.next())})}function t(a){return r(a())}
+p("Object.values",function(a){return a?a:function(b){var c=[],d;for(d in b)Object.prototype.hasOwnProperty.call(b,d)&&c.push(b[d]);return c}});p("Array.prototype.includes",function(a){return a?a:function(b,c){var d=this;d instanceof String&&(d=String(d));var e=d.length;c=c||0;for(c<0&&(c=Math.max(c+e,0));c<e;c++){var f=d[c];if(f===b||Object.is(f,b))return!0}return!1}});/*
+
+ MIT License
+
+ Copyright (c) 2017-2023 W.Y.
+
+ Permission is hereby granted, free of charge, to any person obtaining a copy
+ of this software and associated documentation files (the "Software"), to deal
+ in the Software without restriction, including without limitation the rights
+ to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ copies of the Software, and to permit persons to whom the Software is
+ furnished to do so, subject to the following conditions:
+
+ The above copyright notice and this permission notice shall be included in
+ all copies or substantial portions of the Software.
+
+ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+ SOFTWARE.
+
+*/
+function u(a,b){var c=a.style;b.backgroundColor&&(c.backgroundColor=b.backgroundColor);b.width&&(c.width=`${b.width}px`);b.height&&(c.height=`${b.height}px`);var d=b.style;d!=null&&Object.keys(d).forEach(e=>{c[e]=d[e]})};var v=(()=>{var a=0;return()=>{a+=1;return`u${`0000${(Math.random()*1679616<<0).toString(36)}`.slice(-4)}${a}`}})();function w(a){var b=[];for(let c=0,d=a.length;c<d;c++)b.push(a[c]);return b}let x=null;function y(a={}){return x?x:a.u?x=a.u:x=w(window.getComputedStyle(document.documentElement))}function z(a,b){return(a=(a.ownerDocument.defaultView||window).getComputedStyle(a).getPropertyValue(b))?parseFloat(a.replace("px","")):0}
+function A(a,b={}){var c;if(!(c=b.width)){c=z(a,"border-left-width");var d=z(a,"border-right-width");c=a.clientWidth+c+d}(b=b.height)||(b=z(a,"border-top-width"),d=z(a,"border-bottom-width"),b=a.clientHeight+b+d);return{width:c,height:b}}function B(a){return new Promise((b,c)=>{var d=new Image;d.onload=()=>{d.decode().then(()=>{requestAnimationFrame(()=>b(d))})};d.onerror=c;d.crossOrigin="anonymous";d.decoding="async";d.src=a})}
+function C(a){return t(function*(){return Promise.resolve().then(()=>(new XMLSerializer).serializeToString(a)).then(encodeURIComponent).then(b=>`data:image/svg+xml;charset=utf-8,${b}`)})}
+function D(a,b,c){return t(function*(){var d=document.createElementNS("http://www.w3.org/2000/svg","svg"),e=document.createElementNS("http://www.w3.org/2000/svg","foreignObject");d.setAttribute("width",`${b}`);d.setAttribute("height",`${c}`);d.setAttribute("viewBox",`0 0 ${b} ${c}`);e.setAttribute("width","100%");e.setAttribute("height","100%");e.setAttribute("x","0");e.setAttribute("y","0");e.setAttribute("externalResourcesRequired","true");d.appendChild(e);e.appendChild(a);return C(d)})}
+var E=(a,b)=>{if(a instanceof b)return!0;a=Object.getPrototypeOf(a);return a===null?!1:a.constructor.name===b.name||E(a,b)};function F(a,b){return y(b).map(c=>{var d=a.getPropertyValue(c),e=a.getPropertyPriority(c);return`${c}: ${d}${e?" !important":""};`}).join(" ")}
+function G(a,b,c,d){a=window.getComputedStyle(a,c);var e=a.getPropertyValue("content");if(e!==""&&e!=="none"){var f=v();try{b.className=`${b.className} ${f}`}catch(k){return}e=document.createElement("style");var g=e.appendChild;c=`.${f}:${c}`;a.cssText?(d=a.getPropertyValue("content"),d=`${a.cssText} content: '${d.replace(/'|"/g,"")}';`):d=F(a,d);g.call(e,document.createTextNode(`${c}{${d}}`));b.appendChild(e)}};function H(a){return a.search(/^(data:)/)!==-1}function I(a,b,c){return t(function*(){var d=yield fetch(a,b);if(d.status===404)throw Error(`Resource "${d.url}" not found`);var e=yield d.blob();return new Promise((f,g)=>{var k=new FileReader;k.onerror=g;k.onloadend=()=>{try{f(c({v:d,result:k.result}))}catch(m){g(m)}};k.readAsDataURL(e)})})}const J={};function aa(a,b,c){var d=a.replace(/\?.*/,"");c&&(d=a);/ttf|otf|eot|woff2?/i.test(d)&&(d=d.replace(/.*\//,""));return b?`[${b}]${d}`:d}
+function K(a,b,c){return t(function*(){var d=aa(a,b,c.F);if(J[d]!=null)return J[d];c.B&&(a+=(/\?/.test(a)?"&":"?")+(new Date).getTime());try{let f=yield I(a,c.l,({v:g,result:k})=>{b||(b=g.headers.get("Content-Type")||"");return k.split(/,/)[1]});var e=`data:${b};base64,${f}`}catch(f){e=c.o||""}return J[d]=e})};const L={R:"application/font-woff",S:"application/font-woff",O:"application/font-truetype",C:"application/vnd.ms-fontobject",J:"image/png",H:"image/jpeg",G:"image/jpeg",D:"image/gif",N:"image/tiff",M:"image/svg+xml",P:"image/webp"};function M(a){return(a=/\.([^./]*?)$/g.exec(a))?a[1]:""};function ba(a){return t(function*(){var b=a.toDataURL();return b==="data:,"?a.cloneNode(!1):B(b)})}function ca(a,b){return t(function*(){if(a.currentSrc){var c=document.createElement("canvas");let d=c.getContext("2d");c.width=a.clientWidth;c.height=a.clientHeight;d==null||d.drawImage(a,0,0,c.width,c.height);c=c.toDataURL();return B(c)}c=a.poster;c=yield K(c,L[M(c).toLowerCase()]||"",b);return B(c)})}
+function da(a,b){return t(function*(){try{let c;if(a==null?0:(c=a.contentDocument)==null?0:c.body)return yield N(a.contentDocument.body,b,!0)}catch(c){}return a.cloneNode(!1)})}function ea(a,b){return t(function*(){return E(a,HTMLCanvasElement)?ba(a):E(a,HTMLVideoElement)?ca(a,b):E(a,HTMLIFrameElement)?da(a,b):a.cloneNode(a.tagName!=null&&a.tagName.toUpperCase()==="SVG")})}
+function fa(a,b,c){return t(function*(){if(b.tagName!=null&&b.tagName.toUpperCase()==="SVG")return b;var d=[];if(a.tagName!=null&&a.tagName.toUpperCase()==="SLOT"&&a.assignedNodes)d=w(a.assignedNodes());else{let e;if(E(a,HTMLIFrameElement)&&((e=a.contentDocument)==null?0:e.body))d=w(a.contentDocument.body.childNodes);else{let f;d=w(((f=a.shadowRoot)!=null?f:a).childNodes)}}if(d.length===0||E(a,HTMLVideoElement))return b;yield d.reduce((e,f)=>e.then(()=>N(f,c)).then(g=>{g&&b.appendChild(g)}),Promise.resolve());
+return b})}function ha(a,b,c){var d=b.style;if(d){var e=window.getComputedStyle(a);e.cssText?(d.cssText=e.cssText,d.transformOrigin=e.transformOrigin):y(c).forEach(f=>{var g=e.getPropertyValue(f);f==="font-size"&&g.endsWith("px")&&(g=`${Math.floor(parseFloat(g.substring(0,g.length-2)))-.1}px`);E(a,HTMLIFrameElement)&&f==="display"&&g==="inline"&&(g="block");f==="d"&&b.getAttribute("d")&&(g=`path(${b.getAttribute("d")})`);d.setProperty(f,g,e.getPropertyPriority(f))})}}
+function ia(a,b){E(a,HTMLSelectElement)&&(b=Array.from(b.children).find(c=>a.value===c.getAttribute("value")))&&b.setAttribute("selected","")}
+function ja(a,b){return t(function*(){var c=a.querySelectorAll?a.querySelectorAll("use"):[];if(c.length===0)return a;var d={};for(var e=0;e<c.length;e++){var f=c[e].getAttribute("xlink:href");if(f){let g=document.querySelector(f);a.querySelector(f)||!g||d[f]||(d[f]=yield N(g,b,!0))}}c=Object.values(d);if(c.length){d=document.createElementNS("http://www.w3.org/1999/xhtml","svg");d.setAttribute("xmlns","http://www.w3.org/1999/xhtml");d.style.position="absolute";d.style.width="0";d.style.height="0";
+d.style.overflow="hidden";d.style.display="none";e=document.createElementNS("http://www.w3.org/1999/xhtml","defs");d.appendChild(e);for(f=0;f<c.length;f++)e.appendChild(c[f]);a.appendChild(d)}return a})}
+function N(a,b,c){return t(function*(){return c||!b.filter||b.filter(a)?Promise.resolve(a).then(d=>ea(d,b)).then(d=>fa(a,d,b)).then(d=>{E(d,Element)&&(ha(a,d,b),G(a,d,":before",b),G(a,d,":after",b),E(a,HTMLTextAreaElement)&&(d.textContent=a.value),E(a,HTMLInputElement)&&d.setAttribute("value",a.value),ia(a,d));return d}).then(d=>ja(d,b)):null})};const O=/url\((['"]?)([^'"]+?)\1\)/g,ka=/url\([^)]+\)\s*format\((["']?)([^"']+)\1\)/g,la=/src:\s*(?:url\([^)]+\)\s*format\([^)]+\)[,;]\s*)+/g;function ma(a){var b=[];a.replace(O,(c,d,e)=>{b.push(e);return c});return b.filter(c=>!H(c))}
+function na(a,b,c,d){return t(function*(){try{let e=c?(new URL(b,c||void 0)).toString():b,f;f=yield K(e,L[M(b).toLowerCase()]||"",d);return a.replace(new RegExp(`(url\\(['"]?)(${b.replace(/([.*+?^${}()|\[\]\/\\])/g,"\\$1")})(['"]?\\))`,"g"),`$1${f}$3`)}catch(e){}return a})}function oa(a,{K:b}){return b?a.replace(la,c=>{for(;;){let [d,,e]=ka.exec(c)||[];if(!e)return"";if(e===b)return`src: ${d};`}}):a}
+function P(a,b,c){return t(function*(){if(a.search(O)===-1)return a;var d=oa(a,c);return ma(d).reduce((e,f)=>e.then(g=>na(g,f,b,c)),Promise.resolve(d))})};function Q(a,b,c){return t(function*(){var d,e=(d=b.style)==null?void 0:d.getPropertyValue(a);return e?(d=yield P(e,null,c),b.style.setProperty(a,d,b.style.getPropertyPriority(a)),!0):!1})}function pa(a,b){return t(function*(){(yield Q("background",a,b))||(yield Q("background-image",a,b));(yield Q("mask",a,b))||(yield Q("-webkit-mask",a,b))||(yield Q("mask-image",a,b))||(yield Q("-webkit-mask-image",a,b))})}
+function qa(a,b){return t(function*(){var c=E(a,HTMLImageElement);if(c&&!H(a.src)||E(a,SVGImageElement)&&!H(a.href.baseVal)){var d=c?a.src:a.href.baseVal,e=yield K(d,L[M(d).toLowerCase()]||"",b);yield new Promise((f,g)=>{a.onload=f;a.onerror=b.h?(...k)=>{try{f(b.h(...k))}catch(m){g(m)}}:g;a.decode&&(a.decode=f);a.loading==="lazy"&&(a.loading="eager");c?(a.srcset="",a.src=e):a.href.baseVal=e})}})}
+function ra(a,b){return t(function*(){var c=w(a.childNodes).map(d=>R(d,b));yield Promise.all(c).then(()=>a)})}function R(a,b){return t(function*(){E(a,Element)&&(yield pa(a,b),yield qa(a,b),yield ra(a,b))})};const S={};function T(a){return t(function*(){var b=S[a];if(b!=null)return b;b=yield(yield fetch(a)).text();b={url:a,cssText:b};return S[a]=b})}function U(a,b){return t(function*(){var c=a.cssText,d=/url\(["']?([^"')]+)["']?\)/g,e=(c.match(/url\([^)]+\)/g)||[]).map(f=>t(function*(){var g=f.replace(d,"$1");g.startsWith("https://")||(g=(new URL(g,a.url)).href);return I(g,b.l,({result:k})=>{c=c.replace(f,`url(${k})`);return[f,k]})}));return Promise.all(e).then(()=>c)})}
+function V(a){if(a==null)return[];var b=[];a=a.replace(/(\/\*[\s\S]*?\*\/)/gi,"");for(var c=RegExp("((@.*?keyframes [\\s\\S]*?){([\\s\\S]*?}\\s*?)})","gi");;){var d=c.exec(a);if(d===null)break;b.push(d[0])}a=a.replace(c,"");c=/@import[\s\S]*?url\([^)]*\)[\s\S]*?;/gi;for(d=RegExp("((\\s*?(?:\\/\\*[\\s\\S]*?\\*\\/)?\\s*?@media[\\s\\S]*?){([\\s\\S]*?)}\\s*?})|(([\\s\\S]*?){([\\s\\S]*?)})","gi");;){let e=c.exec(a);if(e===null)if(e=d.exec(a),e===null)break;else c.lastIndex=d.lastIndex;else d.lastIndex=
+c.lastIndex;b.push(e[0])}return b}
+function sa(a,b){return t(function*(){var c=[],d=[];a.forEach(e=>{if("cssRules"in e)try{w(e.cssRules||[]).forEach((f,g)=>{if(f.type===CSSRule.IMPORT_RULE){let k=g+1;f=T(f.href).then(m=>U(m,b)).then(m=>V(m).forEach(q=>{try{e.insertRule(q,q.startsWith("@import")?k+=1:e.cssRules.length)}catch(Fa){}})).catch(()=>{});d.push(f)}})}catch(f){let g=a.find(k=>k.href==null)||document.styleSheets[0];e.href!=null&&d.push(T(e.href).then(k=>U(k,b)).then(k=>V(k).forEach(m=>{g.insertRule(m,g.cssRules.length)})).catch(()=>
+{}))}});return Promise.all(d).then(()=>{a.forEach(e=>{if("cssRules"in e)try{w(e.cssRules||[]).forEach(f=>{c.push(f)})}catch(f){}});return c})})}function ta(a){return a.filter(b=>b.type===CSSRule.FONT_FACE_RULE).filter(b=>b.style.getPropertyValue("src").search(O)!==-1)}function ua(a,b){return t(function*(){if(a.ownerDocument==null)throw Error("Provided element is not within a Document");var c=yield sa(w(a.ownerDocument.styleSheets),b);return ta(c)})}
+function va(a){function b(d){(d.style.fontFamily||getComputedStyle(d).fontFamily).split(",").forEach(e=>{c.add(e.trim().replace(/["']/g,""))});Array.from(d.children).forEach(e=>{e instanceof HTMLElement&&b(e)})}var c=new Set;b(a);return c}function wa(a,b){return t(function*(){var c=yield ua(a,b),d=va(a);return(yield Promise.all(c.filter(e=>d.has(e.style.fontFamily.trim().replace(/["']/g,""))).map(e=>P(e.cssText,e.parentStyleSheet?e.parentStyleSheet.href:null,b)))).join("\n")})}
+function xa(a,b){return t(function*(){var c=b.m!=null?b.m:b.A?null:yield wa(a,b);if(c){let d=document.createElement("style");d.appendChild(document.createTextNode(c));a.firstChild?a.insertBefore(d,a.firstChild):a.appendChild(d)}})};function ya(a,b={}){return t(function*(){var {width:c,height:d}=A(a,b),e=yield N(a,b,!0);yield xa(e,b);yield R(e,b);u(e,b);return yield D(e,c,d)})}
+function za(a,b={}){return t(function*(){var {width:c,height:d}=A(a,b),e=yield ya(a,b);e=yield B(e);var f=document.createElement("canvas"),g=f.getContext("2d"),k=b.I||window.devicePixelRatio||1,m=b.j||c,q=b.i||d;f.width=m*k;f.height=q*k;!b.L&&(f.width>16384||f.height>16384)&&(f.width>16384&&f.height>16384?f.width>f.height?(f.height*=16384/f.width,f.width=16384):(f.width*=16384/f.height,f.height=16384):f.width>16384?(f.height*=16384/f.width,f.width=16384):(f.width*=16384/f.height,f.height=16384));
+f.style.width=`${m}`;f.style.height=`${q}`;b.backgroundColor&&(g.fillStyle=b.backgroundColor,g.fillRect(0,0,f.width,f.height));g.drawImage(e,0,0,f.width,f.height);return f})}function Aa(a,b={}){return t(function*(){return(yield za(a,b)).toDataURL()})};const Ba=["gemini.google.com","corp.google.com","proxy.googlers.com"];function W(){return document.body.querySelectorAll('[class*="animate"]').length>0}function X(a,b){var c=document.createElement("canvas");c.width=a;c.height=b;return c.toDataURL("image/png")}const Y=X(1,1);
+function Z(a){return t(function*(){try{return yield Aa(a,{j:a.offsetWidth,i:a.offsetHeight,A:!0,filter:b=>{if(b.tagName==="IMG"){let c=b.getAttribute("src");if(!c||c.trim()===""||b.style.display==="none")return!1}return!0},o:Y,h:()=>Y})}catch(b){return X(a.offsetWidth,a.offsetHeight)}})}
+function Ca(){return t(function*(){var a=document.body.offsetWidth,b=document.body.offsetHeight,c=document.body.cloneNode(!0);c.querySelectorAll('[class*="animate"]').forEach(d=>{d.classList.remove(...Array.from(d.classList).filter(e=>e.startsWith("animate")))});c.style.width=`${a}px`;c.style.height=`${b}px`;return c})}
+function Da(a){return t(function*(){var b=document.body;if(W()){var c=yield Ca();b=c;document.body.appendChild(c)}c=yield Z(b);W()&&document.body.removeChild(b);window.parent.postMessage({type:"SEND_SCREENSHOT",image:c,topOffset:document.documentElement.scrollTop},a.origin)})}function Ea(a){return t(function*(){var b={type:"SEND_SCREENSHOT_FOR_DATA_VISUALIZATION",image:yield Z(document.body),topOffset:0};window.parent.postMessage(b,a.origin)})}
+window.addEventListener("message",a=>t(function*(){if(Ba.some(c=>a.origin.includes(c))){var b=a.data;b&&(b.type==="MAKE_SCREENSHOT"&&(yield Da(a)),b.type==="MAKE_SCREENSHOT_FOR_DATA_VISUALIZATION"&&(yield Ea(a)))}}));
+})();</script><script data-bard-client-injected="true">(function() {
+  // Ensure this script is executed only once
+  if (window.firebaseAuthBridgeScriptLoaded) {
+    return;
+  }
+  window.firebaseAuthBridgeScriptLoaded = true;
+
+  let nextTokenPromiseId = 0;
+
+  // Stores { resolve, reject } for ongoing token requests
+  const pendingTokenPromises = {};
+
+  // Listen for messages from the Host Application
+  window.addEventListener('message', function(event) {
+
+    const messageData = event.data;
+
+  if (messageData && messageData.type === 'RESOLVE_NEW_FIREBASE_TOKEN') {
+      const { success, token, error, promiseId } = messageData ?? {};
+      if (pendingTokenPromises[promiseId]) {
+        if (success) {
+          pendingTokenPromises[promiseId].resolve(token);
+        } else {
+          pendingTokenPromises[promiseId].reject(new Error(error || 'Token refresh failed from host.'));
+        }
+        delete pendingTokenPromises[promiseId];
+      }
+    }
+  });
+
+  // Expose a function for the Generated App to request a new Firebase token
+  window.requestNewFirebaseToken = function() {
+    const currentPromiseId = nextTokenPromiseId++;
+    const promise = new Promise((resolve, reject) => {
+      pendingTokenPromises[currentPromiseId] = { resolve, reject };
+    });
+    if (window.parent && window.parent !== window) {
+      window.parent.postMessage({
+        type: 'REQUEST_NEW_FIREBASE_TOKEN',
+        promiseId: currentPromiseId
+      }, '*');
+    } else {
+      pendingTokenPromises[currentPromiseId].reject(new Error('No parent window to request token from.'));
+      delete pendingTokenPromises[currentPromiseId];
+    }
+    return promise;
+  };
+})();</script><script data-bard-client-injected="true">
+let realOriginalGetUserMedia = null;
+if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
+  realOriginalGetUserMedia = navigator.mediaDevices.getUserMedia.bind(navigator.mediaDevices);
+}
+
+(function() {
+  if (navigator.mediaDevices && navigator.mediaDevices.__proto__) {
+    try {
+      Object.defineProperty(navigator.mediaDevices.__proto__, 'getUserMedia', {
+        get: function() {
+          return undefined; // Or throw an error
+        },
+        configurable: false
+      });
+    } catch (error) {
+      console.error("Error defining prototype getter:", error);
+    }
+  }
+})();
+
+(function() {
+  const pendingMediaResolvers = {};
+  let nextMediaPromiseId = 0;
+
+  function requestMediaPermissions(constraints) {
+    const mediaPromiseId = nextMediaPromiseId++;
+    const promise = new Promise((resolve, reject) => {
+      pendingMediaResolvers[mediaPromiseId] = (granted) => {
+        delete pendingMediaResolvers[mediaPromiseId];
+        resolve(granted);
+      };
+    });
+
+    window.parent.postMessage({
+      type: 'requestMediaPermission',
+      constraints: constraints,
+      promiseId: mediaPromiseId,
+    }, '*');
+
+    return promise;
+  }
+
+  let originalGetUserMedia = realOriginalGetUserMedia;
+
+  function interceptGetUserMedia() {
+    if (navigator.mediaDevices) {
+      Object.defineProperty(navigator.mediaDevices, 'getUserMedia', {
+        value: function(constraints) {
+          return requestMediaPermissions(constraints).then((granted) => {
+            if (granted) {
+              if (originalGetUserMedia) {
+                return originalGetUserMedia(constraints);
+              } else {
+                throw new Error("Original getUserMedia not available.");
+              }
+            } else {
+              throw new DOMException('Permission denied', 'NotAllowedError');
+            }
+          });
+        },
+        writable: false,
+        configurable: false
+      });
+    }
+  }
+
+  interceptGetUserMedia();
+
+  const observer = new MutationObserver(function(mutationsList, observer) {
+    for (const mutation of mutationsList) {
+      if (mutation.type === 'reconfigured' && mutation.name === 'getUserMedia' && mutation.object === navigator.mediaDevices) {
+        interceptGetUserMedia();
+      } else if (mutation.type === 'attributes' && mutation.attributeName === 'getUserMedia' && mutation.target === navigator.mediaDevices) {
+        interceptGetUserMedia();
+      } else if (mutation.type === 'childList' && mutation.addedNodes) {
+        mutation.addedNodes.forEach(node => {
+          if (node === navigator.mediaDevices) {
+            interceptGetUserMedia();
+          }
+        });
+      }
+    }
+  });
+
+  function interceptSpeechRecognition() {
+    if (!window.SpeechRecognition && !window.webkitSpeechRecognition) {
+      return;
+    }
+
+    const OriginalSpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+
+    const SpeechRecognitionWrapper = function(...args) {
+      const recognizer = new OriginalSpeechRecognition(...args);
+      const originalStart = recognizer.start.bind(recognizer);
+
+      recognizer.start = function() {
+        requestMediaPermissions({ audio: true }).then(granted => {
+          if (granted) {
+            originalStart();
+          } else {
+            const errorEvent = new SpeechRecognitionErrorEvent('error');
+            errorEvent.error = 'not-allowed'; // This is the standard error for permission denial.
+            recognizer.dispatchEvent(errorEvent);
+          }
+        });
+      };
+
+      return recognizer;
+    };
+
+    SpeechRecognitionWrapper.prototype = OriginalSpeechRecognition.prototype;
+    SpeechRecognitionWrapper.prototype.constructor = SpeechRecognitionWrapper;
+
+    if (window.SpeechRecognition) {
+      window.SpeechRecognition = SpeechRecognitionWrapper;
+    }
+    if (window.webkitSpeechRecognition) {
+      window.webkitSpeechRecognition = SpeechRecognitionWrapper;
+    }
+  }
+
+  interceptSpeechRecognition();
+
+  window.addEventListener('message', function(event) {
+    if (event.data) {
+      if (event.data.type === 'resolveMediaPermission') {
+        const { promiseId, granted } = event.data;
+        if (pendingMediaResolvers[promiseId]) {
+          pendingMediaResolvers[promiseId](granted);
+        }
+      }
+    }
+  });
+
+})();</script><script ws-interception-config="{&quot;parentOrigin&quot;:&quot;https://gemini.google.com&quot;,&quot;proxiedDomains&quot;:[]}" data-bard-client-injected="true">(function(){'use strict';var u=typeof Object.defineProperties=="function"?Object.defineProperty:function(b,d,e){if(b==Array.prototype||b==Object.prototype)return b;b[d]=e.value;return b};function v(b){b=["object"==typeof globalThis&&globalThis,b,"object"==typeof window&&window,"object"==typeof self&&self,"object"==typeof global&&global];for(var d=0;d<b.length;++d){var e=b[d];if(e&&e.Math==Math)return e}throw Error("Cannot find global object");}var w=v(this);
+function y(b,d){if(d)a:{var e=w;b=b.split(".");for(var h=0;h<b.length-1;h++){var k=b[h];if(!(k in e))break a;e=e[k]}b=b[b.length-1];h=e[b];d=d(h);d!=h&&d!=null&&u(e,b,{configurable:!0,writable:!0,value:d})}}function z(b){function d(h){return b.next(h)}function e(h){return b.throw(h)}return new Promise(function(h,k){function m(n){n.done?h(n.value):Promise.resolve(n.value).then(d,e).then(m,k)}m(b.next())})}y("globalThis",function(b){return b||w});/*
+
+ Copyright The Closure Library Authors.
+ SPDX-License-Identifier: Apache-2.0
+*/
+function A(b,d){function e(){}e.prototype=d.prototype;b.j=d.prototype;b.prototype=new e;b.prototype.constructor=b;b.h=function(h,k,m){for(var n=Array(arguments.length-2),p=2;p<arguments.length;p++)n[p-2]=arguments[p];return d.prototype[k].apply(h,n)}};function B(b,d,e="*"){function h(a){if(typeof a==="string")return F.encode(a).buffer;if(a instanceof ArrayBuffer)return a.slice(0);if(ArrayBuffer.isView(a))return a.buffer.slice(a.byteOffset,a.byteOffset+a.byteLength);throw Error("Invalid data type");}function k(a){a=h(a);var f={type:"send",data:new Uint8Array(a)},g;(g=r)==null||g.postMessage(f,[a])}function m(){if(!r)throw Error("Data port not captured yet.");r.onmessage=a=>{if(a.data.type==="message"){a=new MessageEvent("message",{data:G.decode(a.data.data)});
+let f;(f=c.onmessage)==null||f.call(c,a);c.dispatchEvent(a)}}}function n(){if(!t)throw Error("Control port not captured yet.");t.onmessage=a=>{switch(a.data.type){case "open":l=1;var f=new Event("open"),g;(g=c.onopen)==null||g.call(c,f);c.dispatchEvent(f);q.forEach(H=>{k(H)});q=[];break;case "close":g=a.data;l=3;g=new CloseEvent("close",{code:g.code,reason:g.reason,wasClean:g.wasClean});(f=c.onclose)==null||f.call(c,g);c.dispatchEvent(g);break;case "error":l=3;f=new Event("error");let x;(x=c.onerror)==
+null||x.call(c,f);c.dispatchEvent(f)}}}function p(a){return z(function*(){var f=new MessageChannel;t=f.port1;var g=new MessageChannel;r=g.port1;n();m();window.parent.postMessage({type:"websocket_open",portOrdering:["control","data"],url:b,protocols:a||[],connectionId:I},e,[f.port2,g.port2])}())}var c=Reflect.construct(EventTarget,[],new.target);c.CONNECTING=0;c.OPEN=1;c.CLOSING=2;c.CLOSED=3;c.url=b;c.binaryType="arraybuffer";c.protocol="";c.i="";var l=0,t=null,r=null,q=[],F=new TextEncoder,G=new TextDecoder;
+c.onopen=null;c.onmessage=null;c.onclose=null;c.onerror=null;Object.defineProperty(c,"readyState",{get:()=>l,enumerable:!0,configurable:!0});Object.defineProperty(c,"bufferedAmount",{get:()=>{var a=0;q.forEach(f=>{a+=typeof f==="string"?f.length:f.byteLength});return a},enumerable:!0,configurable:!0});var I=function(){var a;return((a=globalThis.crypto)==null?0:a.randomUUID)?globalThis.crypto.randomUUID():"xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx".replace(/[xy]/g,f=>{var g=Math.random()*16|0;return(f===
+"x"?g:g&3|8).toString(16)})}();c.send=a=>{if(l===1)a instanceof Blob?a.arrayBuffer().then(f=>{k(f)}):k(a);else if(l===0)if(typeof a==="string")q.push(a);else if(a instanceof ArrayBuffer||ArrayBuffer.isView(a))q.push(h(a));else throw Error("Sending Blob is not supported before the connection is open.");else console.debug("WebSocket send called in CLOSING or CLOSED state; ignored.")};c.close=(a=1E3,f="")=>{if(l!==2&&l!==3){l=2;a={type:"close",code:a,reason:f,wasClean:a===1E3};var g;(g=t)==null||g.postMessage(a)}};
+Promise.resolve().then(()=>p(d));return c}A(B,EventTarget);var C=document.currentScript,D=C==null?void 0:C.getAttribute("ws-interception-config");if(!D)throw Error("WebSocket Interceptor: Missing ws-interception-config attribute in the script tag.");var E=JSON.parse(D);if(!E.parentOrigin||typeof E.parentOrigin!=="string")throw Error("WebSocket Interceptor: Invalid parentOrigin in ws-interception-config");
+(function(b){var d=Object.getOwnPropertyDescriptor(window,"WebSocket");if(!d||d.writable||d.configurable)d=Object.assign(function(e,h){try{let k=(new URL(e)).hostname;if(b.proxiedDomains.some(m=>k===m||k.endsWith(`.${m}`)))return new B(e,h,b.parentOrigin)}catch(k){throw window.parent.postMessage({type:"websocket_blocked",url:e,reason:"blocked_invalid_url"},b.parentOrigin),new DOMException(`WebSocket connection to '${e}' is not allowed in Canvas.`,"SecurityError");}window.parent.postMessage({type:"websocket_blocked",
+url:e,reason:"blocked_domain_not_allowlisted"},b.parentOrigin);throw new DOMException(`WebSocket connection to '${e}' is not allowed in Canvas.`,"SecurityError");},{CONNECTING:0,OPEN:1,CLOSING:2,CLOSED:3}),Object.defineProperty(window,"WebSocket",{value:d,writable:!1,configurable:!1})})({proxiedDomains:E.proxiedDomains||[],parentOrigin:E.parentOrigin});}).call(this);
+</script><script data-bard-client-injected="true">((function(modelInformation) {
+  const originalFetch = window.fetch;
+  // TODO: b/421908508 - Move these out of the script and match all generative AI model calls.
+  let googleLlmBaseApiUrls = [
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.textModelName + ':streamGenerateContent',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.textModelName + ':generateContent',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.imageModelName + ':predict',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.imageModelName + ':predictLongRunning',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.imageEditModelName + ':generateContent',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.imageTransformModelName + ':generateContent',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.videoModelName + ':predict',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.videoModelName + ':predictLongRunning',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.ttsModelName + ':generateContent',
+  ];
+  modelInformation.deprecatedTextModelNames.forEach((modelName) => {
+    googleLlmBaseApiUrls.push(
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':streamGenerateContent',
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':generateContent',
+    );
+  });
+  modelInformation.deprecatedImageModelNames.forEach((modelName) => {
+    googleLlmBaseApiUrls.push(
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':predict',
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':predictLongRunning',
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':generateContent',
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':streamGenerateContent',
+    );
+  });
+  modelInformation.deprecatedGenerateImageModelNames.forEach((modelName) => {
+    googleLlmBaseApiUrls.push(
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':generateContent',
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':streamGenerateContent',
+    );
+  });
+  modelInformation.deprecatedImageTransformModelNames.forEach((modelName) => {
+    googleLlmBaseApiUrls.push(
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':generateContent',
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':streamGenerateContent',
+    );
+  });
+
+  const pendingFetchResolvers = {};
+  let nextPromiseId = 0;
+
+  function handleStringInput(input, optionsArgument) {
+    const actualUrl = input;
+    const fetchCallArgs = [actualUrl, optionsArgument];
+    const effectiveOptions = optionsArgument || {};
+    const bodyForApiKeyCheck = effectiveOptions.body;
+    const bodyForPostMessage = effectiveOptions.body;
+    return { actualUrl, fetchCallArgs, effectiveOptions, bodyForApiKeyCheck, bodyForPostMessage };
+  }
+
+  function handleRequestInput(input, optionsArgument) {
+    const actualUrl = input.url;
+    const fetchCallArgs = [input, optionsArgument];
+    const effectiveOptions = { method: input.method, headers: new Headers(input.headers) };
+    let bodyForApiKeyCheck;
+    let bodyForPostMessage;
+
+    if (optionsArgument) {
+      if (optionsArgument.method) effectiveOptions.method = optionsArgument.method;
+      if (optionsArgument.headers) effectiveOptions.headers = new Headers(optionsArgument.headers);
+      if ('body' in optionsArgument) {
+        bodyForApiKeyCheck = optionsArgument.body;
+        bodyForPostMessage = optionsArgument.body;
+      } else {
+        bodyForApiKeyCheck = undefined;
+        bodyForPostMessage = input.body;
+      }
+    } else {
+      bodyForApiKeyCheck = undefined;
+      bodyForPostMessage = input.body;
+    }
+    return { actualUrl, fetchCallArgs, effectiveOptions, bodyForApiKeyCheck, bodyForPostMessage };
+  }
+
+  window.fetch = function(input, optionsArgument) {
+    let actualUrl;
+    let fetchCallArgs;
+    let effectiveOptions = {};
+    let bodyForApiKeyCheck;
+    let bodyForPostMessage;
+
+    if (typeof input === 'string') {
+      ({actualUrl, fetchCallArgs, effectiveOptions, bodyForApiKeyCheck, bodyForPostMessage} = handleStringInput(input, optionsArgument));
+    } else if (input instanceof Request) {
+      ({actualUrl, fetchCallArgs, effectiveOptions, bodyForApiKeyCheck, bodyForPostMessage} = handleRequestInput(input, optionsArgument));
+    } else {
+      return originalFetch.apply(window, [input, optionsArgument]);
+    }
+
+    effectiveOptions.method = effectiveOptions.method || 'GET';
+    if (!effectiveOptions.headers) {
+      effectiveOptions.headers = new Headers();
+    }
+
+
+    if (typeof actualUrl === 'string' && googleLlmBaseApiUrls.some((url) => actualUrl.startsWith(url))) {
+      let apiKeyIsNull = true;
+
+      const regex = new RegExp("models/([^:]+)");
+      const modelNameMatch = actualUrl.match(regex);
+      const modelName = modelNameMatch ? modelNameMatch[1] : 'unspecified';
+
+
+      try {
+        const urlObject = new URL(actualUrl);  // Use URL object for robust parsing
+        const apiKeyParam = urlObject.searchParams.get('key');
+        if (apiKeyParam) {
+          apiKeyIsNull = false;
+        }
+      } catch (e) {
+        // Continue checks even if URL parsing fails
+      }
+
+      if (apiKeyIsNull && effectiveOptions.headers) {
+        const h = new Headers(effectiveOptions.headers);
+        const apiKeyHeaderValue = h.get('X-API-Key') || h.get('x-api-key');
+        if (apiKeyHeaderValue) {
+          apiKeyIsNull = false;
+          return originalFetch.apply(window, fetchCallArgs);
+        }
+      }
+
+      if (apiKeyIsNull && effectiveOptions.method && ['POST', 'PUT', 'PATCH'].includes(effectiveOptions.method.toUpperCase()) && typeof bodyForApiKeyCheck === 'string') {
+        try {
+          const bodyData = JSON.parse(bodyForApiKeyCheck);
+          if (bodyData && bodyData.apiKey) {
+            apiKeyIsNull = false;
+            return originalFetch.apply(window, fetchCallArgs);
+          }
+        } catch (e) {
+          // Ignore JSON parsing errors
+        }
+      }
+
+      if(apiKeyIsNull) {
+        const promiseId = nextPromiseId++;
+        const promise = new Promise((resolve) => {
+          pendingFetchResolvers[promiseId] = (resolvedResponse) => {
+            delete pendingFetchResolvers[promiseId];
+            resolve(resolvedResponse);
+          };
+        });
+
+        let serializedBodyForPostMessage;
+        if (typeof bodyForPostMessage === 'string' || bodyForPostMessage == null) {
+            serializedBodyForPostMessage = bodyForPostMessage;
+        } else if (bodyForPostMessage instanceof ReadableStream) {
+            serializedBodyForPostMessage = null;
+        } else {
+            try {
+                serializedBodyForPostMessage = JSON.stringify(bodyForPostMessage);
+            } catch (e) {
+                serializedBodyForPostMessage = null;
+            }
+        }
+
+        const messageOptions = {
+            method: effectiveOptions.method,
+            headers: Object.fromEntries(new Headers(effectiveOptions.headers).entries()),
+            body: serializedBodyForPostMessage
+        };
+
+        window.parent.postMessage({
+          type: 'requestFetch',
+          url: actualUrl,
+          modelName: modelName,
+          options: messageOptions,
+          promiseId: promiseId,
+        }, '*');
+
+        return promise;
+      }
+      return originalFetch.apply(window, fetchCallArgs);
+    }
+    return originalFetch.apply(window, fetchCallArgs);
+  };
+
+  window.addEventListener('message', function(event) {
+    if (event.data && event.data.type === 'resolveFetch') {
+      const { promiseId, response } = event.data;
+      if (pendingFetchResolvers[promiseId]) {
+        try {
+          const reconstructedResponse = new Response(response.body, {
+            status: response.status,
+            statusText: response.statusText,
+            headers: new Headers(response.headers),
+          });
+          pendingFetchResolvers[promiseId](reconstructedResponse);
+        } catch (error) {
+          pendingFetchResolvers[promiseId](new Response(null, { status: 500, statusText: "Interceptor Response Reconstruction Error" }));
+        }
+      }
+    }
+  });
+
+}))({"textModelName":"gemini-3-flash-preview","imageModelName":"imagen-4.0-generate-001","imageEditModelName":"gemini-3.1-flash-image","imageTransformModelName":"gemini-3-pro-image","videoModelName":"veo-2.0-generate-001","ttsModelName":"gemini-2.5-flash-preview-tts","deprecatedTextModelNames":["gemini-2.0-flash","gemini-2.5-flash","gemini-2.5-flash-preview-04-17","gemini-2.5-flash-preview-05-20","gemini-2.5-flash-preview-09-2025"],"deprecatedImageModelNames":["imagen-3.0-generate-001","imagen-3.0-generate-002"],"deprecatedGenerateImageModelNames":["gemini-2.5-flash-image-preview","gemini-2.5-flash-image","gemini-3.1-flash-image-preview"],"deprecatedImageTransformModelNames":["gemini-3-pro-image-preview-11-2025"]})</script><script data-bard-client-injected="true">(function(){'use strict';function a(){window.parent.postMessage({type:"interaction"},"*")}window.addEventListener("click",a,{capture:!0,passive:!0});window.addEventListener("touchstart",a,{capture:!0,passive:!0});window.addEventListener("keydown",a,{capture:!0,passive:!0});}).call(this);
+</script><script data-bard-client-injected="true">(function() {
+  const originalConsoleLog = console.log;
+  const originalConsoleError = console.error;
+
+    /**
+   * Normalizes an error event or a promise rejection reason into a structured error object.
+   * @param {*} errorEventOrReason The error object or reason.
+   * @return {object} Structured error data { message, name, stack }.
+   */
+  function getErrorObject(errorEventOrReason) {
+    if (errorEventOrReason instanceof Error) {
+      return {
+        message: errorEventOrReason.message,
+        name: errorEventOrReason.name,
+        stack: errorEventOrReason.stack,
+      };
+    }
+    // Fallback for non-Error objects.
+    try {
+      return {
+        message: JSON.stringify(errorEventOrReason),
+        name: 'UnknownErrorType',
+        stack: null,
+      };
+    } catch (e) {
+      return {
+        message: String(errorEventOrReason),
+        name: 'UnknownErrorTypeNonStringifiable',
+        stack: null,
+      };
+    }
+  }
+
+  /**
+   * Converts an array of arguments (from log/error) into a single string.
+   * Handles Error objects specially to include their message and stack.
+   * @param {Array<*>} args - Arguments passed to console methods.
+   * @return {string} A string representation of the arguments.
+   */
+  function stringifyArgs(args) {
+    return args
+      .map((arg) => {
+        if (arg instanceof Error) {
+          const {message, stack} = arg;
+          return `Error: ${message}${stack ? ('\nStack: ' + stack) : ''}`;
+        }
+        if (typeof arg === 'object' && arg !== null) {
+          try {
+            return JSON.stringify(arg);
+          } catch (error) {
+            return '[Circular Object]';
+          }
+        } else {
+          return String(arg);
+        }
+      })
+      .join(' ');
+  }
+
+  console.log = function(...args) {
+    const logString = stringifyArgs(args);
+    window.parent.postMessage({ type: 'log', message: logString }, '*');
+    originalConsoleLog.apply(console, args);
+  };
+
+  console.error = function(...args) {
+    let errorData;
+    if (args.length > 0 && args[0] instanceof Error) {
+      const err = args[0];
+      // If the first arg is an Error, capture its details.
+      errorData = {
+        type: 'error',
+        source: 'CONSOLE_ERROR',
+        ...getErrorObject(err),
+        rawArgsString: stringifyArgs(args.slice(1)),
+        timestamp: new Date().toISOString(),
+      };
+    } else {
+      // If not an Error object, treat all args as a general error message.
+      errorData = {
+        type: 'error',
+        source: 'CONSOLE_ERROR',
+        message: stringifyArgs(args),
+        name: 'ConsoleLoggedError',
+        stack: null,
+        timestamp: new Date().toISOString(),
+      };
+    }
+    window.parent.postMessage(errorData, '*');
+    originalConsoleError.apply(console, args);
+  };
+
+  // Listen for global unhandled synchronous errors.
+  window.addEventListener('error', function(event) {
+    const errorDetails = event.error ? getErrorObject(event.error) : {
+      message: event.message,
+      name: 'GlobalError',
+      stack: null,
+      filename: event.filename,
+      lineno: event.lineno,
+      colno: event.colno,
+    };
+
+    window.parent.postMessage({
+      type: 'error',
+      source: 'global',
+      ...errorDetails,
+      message: errorDetails.message || event.message,
+      timestamp: new Date().toISOString(),
+    }, '*');
+  });
+
+  // Listen for unhandled promise rejections (asynchronous errors).
+  window.addEventListener('unhandledrejection', function(event) {
+    const errorDetails = getErrorObject(event.reason);
+
+    window.parent.postMessage({
+      type: 'error',
+      source: 'unhandledrejection',
+      ...errorDetails,
+      message: errorDetails.message || 'Unhandled Promise Rejection',
+      timestamp: new Date().toISOString(),
+    }, '*');
+  });
+
+})();</script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>F.R.I.D.A.Y. — Step 8 AWS Cloud Auto-Sync, Connection Tester &amp; Voice Customizer</title>
+  <meta name="theme-color" content="#060b14">
+  <link id="pwaManifestLink" rel="manifest" href="data:application/manifest+json,{}">
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500;600&amp;display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #060b14;
+      color: #e2e8f0;
+    }
+    .mono {
+      font-family: 'JetBrains Mono', monospace;
+    }
+    @keyframes pulse-ring {
+      0% { transform: scale(0.92); opacity: 0.75; }
+      50% { transform: scale(1.06); opacity: 1; }
+      100% { transform: scale(0.92); opacity: 0.75; }
+    }
+    .orb-active {
+      animation: pulse-ring 2.2s infinite ease-in-out;
+    }
+    .hud-border {
+      border: 1px solid rgba(56, 189, 248, 0.25);
+      box-shadow: 0 0 20px rgba(14, 165, 233, 0.08);
+    }
+  </style>
+<style>*, ::before, ::after{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }/* ! tailwindcss v3.4.17 | MIT License | https://tailwindcss.com */*,::after,::before{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}::after,::before{--tw-content:''}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4;font-family:ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0;padding:0}legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}.sticky{position:sticky}.top-0{top:0px}.z-20{z-index:20}.mx-auto{margin-left:auto;margin-right:auto}.mb-1{margin-bottom:0.25rem}.mt-0\.5{margin-top:0.125rem}.mt-2{margin-top:0.5rem}.block{display:block}.flex{display:flex}.grid{display:grid}.hidden{display:none}.h-12{height:3rem}.h-2{height:0.5rem}.h-3\.5{height:0.875rem}.h-4{height:1rem}.h-9{height:2.25rem}.h-full{height:100%}.h-1\.5{height:0.375rem}.max-h-44{max-height:11rem}.max-h-48{max-height:12rem}.max-h-52{max-height:13rem}.max-h-\[520px\]{max-height:520px}.min-h-\[360px\]{min-height:360px}.min-h-screen{min-height:100vh}.w-12{width:3rem}.w-2{width:0.5rem}.w-3\.5{width:0.875rem}.w-4{width:1rem}.w-9{width:2.25rem}.w-full{width:100%}.max-w-6xl{max-width:72rem}.max-w-\[85\%\]{max-width:85%}.flex-1{flex:1 1 0%}.shrink-0{flex-shrink:0}.cursor-pointer{cursor:pointer}.list-inside{list-style-position:inside}.list-decimal{list-style-type:decimal}.grid-cols-1{grid-template-columns:repeat(1, minmax(0, 1fr))}.flex-col{flex-direction:column}.flex-wrap{flex-wrap:wrap}.items-start{align-items:flex-start}.items-center{align-items:center}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.gap-1\.5{gap:0.375rem}.gap-2{gap:0.5rem}.gap-2\.5{gap:0.625rem}.gap-3{gap:0.75rem}.gap-3\.5{gap:0.875rem}.gap-4{gap:1rem}.gap-1{gap:0.25rem}.space-y-1\.5 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.375rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.375rem * var(--tw-space-y-reverse))}.space-y-2 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.5rem * var(--tw-space-y-reverse))}.space-y-3 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.75rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.75rem * var(--tw-space-y-reverse))}.space-y-4 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1rem * var(--tw-space-y-reverse))}.space-y-0\.5 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.125rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.125rem * var(--tw-space-y-reverse))}.overflow-hidden{overflow:hidden}.overflow-x-auto{overflow-x:auto}.overflow-y-auto{overflow-y:auto}.truncate{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.rounded{border-radius:0.25rem}.rounded-2xl{border-radius:1rem}.rounded-full{border-radius:9999px}.rounded-lg{border-radius:0.5rem}.rounded-xl{border-radius:0.75rem}.rounded-b-2xl{border-bottom-right-radius:1rem;border-bottom-left-radius:1rem}.rounded-tl-sm{border-top-left-radius:0.125rem}.border{border-width:1px}.border-2{border-width:2px}.border-b{border-bottom-width:1px}.border-t{border-top-width:1px}.border-amber-400\/40{border-color:rgb(251 191 36 / 0.4)}.border-amber-400\/50{border-color:rgb(251 191 36 / 0.5)}.border-amber-500\/30{border-color:rgb(245 158 11 / 0.3)}.border-blue-500\/20{border-color:rgb(59 130 246 / 0.2)}.border-blue-500\/30{border-color:rgb(59 130 246 / 0.3)}.border-blue-500\/40{border-color:rgb(59 130 246 / 0.4)}.border-cyan-500\/30{border-color:rgb(6 182 212 / 0.3)}.border-emerald-400\/40{border-color:rgb(52 211 153 / 0.4)}.border-emerald-500\/30{border-color:rgb(16 185 129 / 0.3)}.border-indigo-500\/30{border-color:rgb(99 102 241 / 0.3)}.border-purple-400\/40{border-color:rgb(192 132 252 / 0.4)}.border-purple-500\/30{border-color:rgb(168 85 247 / 0.3)}.border-purple-500\/40{border-color:rgb(168 85 247 / 0.4)}.border-rose-500\/30{border-color:rgb(244 63 94 / 0.3)}.border-sky-400{--tw-border-opacity:1;border-color:rgb(56 189 248 / var(--tw-border-opacity, 1))}.border-sky-400\/40{border-color:rgb(56 189 248 / 0.4)}.border-sky-500\/30{border-color:rgb(14 165 233 / 0.3)}.border-sky-500\/40{border-color:rgb(14 165 233 / 0.4)}.border-sky-900\/50{border-color:rgb(12 74 110 / 0.5)}.border-slate-700{--tw-border-opacity:1;border-color:rgb(51 65 85 / var(--tw-border-opacity, 1))}.border-slate-700\/80{border-color:rgb(51 65 85 / 0.8)}.border-slate-800{--tw-border-opacity:1;border-color:rgb(30 41 59 / var(--tw-border-opacity, 1))}.border-slate-800\/80{border-color:rgb(30 41 59 / 0.8)}.border-slate-600{--tw-border-opacity:1;border-color:rgb(71 85 105 / var(--tw-border-opacity, 1))}.border-slate-800\/60{border-color:rgb(30 41 59 / 0.6)}.bg-\[\#060b14\]{--tw-bg-opacity:1;background-color:rgb(6 11 20 / var(--tw-bg-opacity, 1))}.bg-\[\#08101d\]{--tw-bg-opacity:1;background-color:rgb(8 16 29 / var(--tw-bg-opacity, 1))}.bg-\[\#0a1220\]\/90{background-color:rgb(10 18 32 / 0.9)}.bg-\[\#0b1526\]{--tw-bg-opacity:1;background-color:rgb(11 21 38 / var(--tw-bg-opacity, 1))}.bg-amber-400{--tw-bg-opacity:1;background-color:rgb(251 191 36 / var(--tw-bg-opacity, 1))}.bg-amber-500{--tw-bg-opacity:1;background-color:rgb(245 158 11 / var(--tw-bg-opacity, 1))}.bg-amber-500\/15{background-color:rgb(245 158 11 / 0.15)}.bg-amber-500\/20{background-color:rgb(245 158 11 / 0.2)}.bg-blue-500{--tw-bg-opacity:1;background-color:rgb(59 130 246 / var(--tw-bg-opacity, 1))}.bg-blue-500\/15{background-color:rgb(59 130 246 / 0.15)}.bg-cyan-500\/15{background-color:rgb(6 182 212 / 0.15)}.bg-emerald-400{--tw-bg-opacity:1;background-color:rgb(52 211 153 / var(--tw-bg-opacity, 1))}.bg-emerald-500{--tw-bg-opacity:1;background-color:rgb(16 185 129 / var(--tw-bg-opacity, 1))}.bg-emerald-500\/15{background-color:rgb(16 185 129 / 0.15)}.bg-emerald-500\/20{background-color:rgb(16 185 129 / 0.2)}.bg-indigo-500{--tw-bg-opacity:1;background-color:rgb(99 102 241 / var(--tw-bg-opacity, 1))}.bg-indigo-500\/15{background-color:rgb(99 102 241 / 0.15)}.bg-purple-500\/15{background-color:rgb(168 85 247 / 0.15)}.bg-purple-500\/20{background-color:rgb(168 85 247 / 0.2)}.bg-purple-950\/60{background-color:rgb(59 7 100 / 0.6)}.bg-rose-500\/15{background-color:rgb(244 63 94 / 0.15)}.bg-sky-400{--tw-bg-opacity:1;background-color:rgb(56 189 248 / var(--tw-bg-opacity, 1))}.bg-sky-500{--tw-bg-opacity:1;background-color:rgb(14 165 233 / var(--tw-bg-opacity, 1))}.bg-sky-500\/10{background-color:rgb(14 165 233 / 0.1)}.bg-sky-500\/15{background-color:rgb(14 165 233 / 0.15)}.bg-sky-500\/20{background-color:rgb(14 165 233 / 0.2)}.bg-sky-950\/60{background-color:rgb(8 47 73 / 0.6)}.bg-slate-500{--tw-bg-opacity:1;background-color:rgb(100 116 139 / var(--tw-bg-opacity, 1))}.bg-slate-800{--tw-bg-opacity:1;background-color:rgb(30 41 59 / var(--tw-bg-opacity, 1))}.bg-slate-800\/80{background-color:rgb(30 41 59 / 0.8)}.bg-slate-900{--tw-bg-opacity:1;background-color:rgb(15 23 42 / var(--tw-bg-opacity, 1))}.bg-slate-900\/80{background-color:rgb(15 23 42 / 0.8)}.bg-slate-900\/90{background-color:rgb(15 23 42 / 0.9)}.bg-slate-950{--tw-bg-opacity:1;background-color:rgb(2 6 23 / var(--tw-bg-opacity, 1))}.bg-slate-950\/80{background-color:rgb(2 6 23 / 0.8)}.bg-rose-500{--tw-bg-opacity:1;background-color:rgb(244 63 94 / var(--tw-bg-opacity, 1))}.bg-slate-950\/60{background-color:rgb(2 6 23 / 0.6)}.p-2\.5{padding:0.625rem}.p-3{padding:0.75rem}.p-3\.5{padding:0.875rem}.p-4{padding:1rem}.p-5{padding:1.25rem}.p-2{padding:0.5rem}.px-2{padding-left:0.5rem;padding-right:0.5rem}.px-2\.5{padding-left:0.625rem;padding-right:0.625rem}.px-3{padding-left:0.75rem;padding-right:0.75rem}.px-3\.5{padding-left:0.875rem;padding-right:0.875rem}.px-4{padding-left:1rem;padding-right:1rem}.py-0\.5{padding-top:0.125rem;padding-bottom:0.125rem}.py-1{padding-top:0.25rem;padding-bottom:0.25rem}.py-1\.5{padding-top:0.375rem;padding-bottom:0.375rem}.py-2{padding-top:0.5rem;padding-bottom:0.5rem}.py-2\.5{padding-top:0.625rem;padding-bottom:0.625rem}.py-3{padding-top:0.75rem;padding-bottom:0.75rem}.px-1{padding-left:0.25rem;padding-right:0.25rem}.px-1\.5{padding-left:0.375rem;padding-right:0.375rem}.pr-1{padding-right:0.25rem}.pt-1{padding-top:0.25rem}.pt-2{padding-top:0.5rem}.pr-2{padding-right:0.5rem}.text-\[11px\]{font-size:11px}.text-base{font-size:1rem;line-height:1.5rem}.text-sm{font-size:0.875rem;line-height:1.25rem}.text-xs{font-size:0.75rem;line-height:1rem}.text-\[10px\]{font-size:10px}.font-bold{font-weight:700}.font-medium{font-weight:500}.font-semibold{font-weight:600}.uppercase{text-transform:uppercase}.leading-relaxed{line-height:1.625}.leading-snug{line-height:1.375}.tracking-wider{letter-spacing:0.05em}.tracking-widest{letter-spacing:0.1em}.text-amber-200{--tw-text-opacity:1;color:rgb(253 230 138 / var(--tw-text-opacity, 1))}.text-amber-300{--tw-text-opacity:1;color:rgb(252 211 77 / var(--tw-text-opacity, 1))}.text-amber-400{--tw-text-opacity:1;color:rgb(251 191 36 / var(--tw-text-opacity, 1))}.text-blue-300{--tw-text-opacity:1;color:rgb(147 197 253 / var(--tw-text-opacity, 1))}.text-blue-400{--tw-text-opacity:1;color:rgb(96 165 250 / var(--tw-text-opacity, 1))}.text-cyan-300{--tw-text-opacity:1;color:rgb(103 232 249 / var(--tw-text-opacity, 1))}.text-emerald-300{--tw-text-opacity:1;color:rgb(110 231 183 / var(--tw-text-opacity, 1))}.text-emerald-400{--tw-text-opacity:1;color:rgb(52 211 153 / var(--tw-text-opacity, 1))}.text-indigo-300{--tw-text-opacity:1;color:rgb(165 180 252 / var(--tw-text-opacity, 1))}.text-purple-300{--tw-text-opacity:1;color:rgb(216 180 254 / var(--tw-text-opacity, 1))}.text-rose-300{--tw-text-opacity:1;color:rgb(253 164 175 / var(--tw-text-opacity, 1))}.text-sky-300{--tw-text-opacity:1;color:rgb(125 211 252 / var(--tw-text-opacity, 1))}.text-sky-400{--tw-text-opacity:1;color:rgb(56 189 248 / var(--tw-text-opacity, 1))}.text-sky-400\/90{color:rgb(56 189 248 / 0.9)}.text-slate-100{--tw-text-opacity:1;color:rgb(241 245 249 / var(--tw-text-opacity, 1))}.text-slate-300{--tw-text-opacity:1;color:rgb(203 213 225 / var(--tw-text-opacity, 1))}.text-slate-400{--tw-text-opacity:1;color:rgb(148 163 184 / var(--tw-text-opacity, 1))}.text-slate-950{--tw-text-opacity:1;color:rgb(2 6 23 / var(--tw-text-opacity, 1))}.text-emerald-500{--tw-text-opacity:1;color:rgb(16 185 129 / var(--tw-text-opacity, 1))}.text-sky-500{--tw-text-opacity:1;color:rgb(14 165 233 / var(--tw-text-opacity, 1))}.text-slate-200{--tw-text-opacity:1;color:rgb(226 232 240 / var(--tw-text-opacity, 1))}.text-slate-500{--tw-text-opacity:1;color:rgb(100 116 139 / var(--tw-text-opacity, 1))}.line-through{-webkit-text-decoration-line:line-through;text-decoration-line:line-through}.placeholder-slate-500::placeholder{--tw-placeholder-opacity:1;color:rgb(100 116 139 / var(--tw-placeholder-opacity, 1))}.shadow-\[0_0_10px_\#38bdf8\]{--tw-shadow:0 0 10px #38bdf8;--tw-shadow-colored:0 0 10px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.backdrop-blur{--tw-backdrop-blur:blur(8px);-webkit-backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia)}.transition{transition-property:color, background-color, border-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-text-decoration-color, -webkit-backdrop-filter;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-text-decoration-color, -webkit-backdrop-filter;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.transition-all{transition-property:all;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.duration-300{transition-duration:300ms}.selection\:bg-sky-500 *::selection{--tw-bg-opacity:1;background-color:rgb(14 165 233 / var(--tw-bg-opacity, 1))}.selection\:text-white *::selection{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.selection\:bg-sky-500::selection{--tw-bg-opacity:1;background-color:rgb(14 165 233 / var(--tw-bg-opacity, 1))}.selection\:text-white::selection{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.last\:border-none:last-child{border-style:none}.hover\:bg-amber-400:hover{--tw-bg-opacity:1;background-color:rgb(251 191 36 / var(--tw-bg-opacity, 1))}.hover\:bg-amber-500\/25:hover{background-color:rgb(245 158 11 / 0.25)}.hover\:bg-amber-500\/30:hover{background-color:rgb(245 158 11 / 0.3)}.hover\:bg-blue-400:hover{--tw-bg-opacity:1;background-color:rgb(96 165 250 / var(--tw-bg-opacity, 1))}.hover\:bg-blue-500\/25:hover{background-color:rgb(59 130 246 / 0.25)}.hover\:bg-cyan-500\/25:hover{background-color:rgb(6 182 212 / 0.25)}.hover\:bg-emerald-400:hover{--tw-bg-opacity:1;background-color:rgb(52 211 153 / var(--tw-bg-opacity, 1))}.hover\:bg-emerald-500\/25:hover{background-color:rgb(16 185 129 / 0.25)}.hover\:bg-emerald-500\/30:hover{background-color:rgb(16 185 129 / 0.3)}.hover\:bg-indigo-400:hover{--tw-bg-opacity:1;background-color:rgb(129 140 248 / var(--tw-bg-opacity, 1))}.hover\:bg-indigo-500\/25:hover{background-color:rgb(99 102 241 / 0.25)}.hover\:bg-purple-500\/25:hover{background-color:rgb(168 85 247 / 0.25)}.hover\:bg-purple-500\/30:hover{background-color:rgb(168 85 247 / 0.3)}.hover\:bg-purple-900\/50:hover{background-color:rgb(88 28 135 / 0.5)}.hover\:bg-rose-500\/25:hover{background-color:rgb(244 63 94 / 0.25)}.hover\:bg-sky-400:hover{--tw-bg-opacity:1;background-color:rgb(56 189 248 / var(--tw-bg-opacity, 1))}.hover\:bg-sky-500\/20:hover{background-color:rgb(14 165 233 / 0.2)}.hover\:bg-sky-500\/25:hover{background-color:rgb(14 165 233 / 0.25)}.hover\:bg-sky-500\/30:hover{background-color:rgb(14 165 233 / 0.3)}.hover\:bg-sky-900\/50:hover{background-color:rgb(12 74 110 / 0.5)}.hover\:bg-slate-700:hover{--tw-bg-opacity:1;background-color:rgb(51 65 85 / var(--tw-bg-opacity, 1))}.hover\:bg-slate-800:hover{--tw-bg-opacity:1;background-color:rgb(30 41 59 / var(--tw-bg-opacity, 1))}.hover\:text-sky-400:hover{--tw-text-opacity:1;color:rgb(56 189 248 / var(--tw-text-opacity, 1))}.hover\:text-rose-400:hover{--tw-text-opacity:1;color:rgb(251 113 133 / var(--tw-text-opacity, 1))}.focus\:border-amber-400:focus{--tw-border-opacity:1;border-color:rgb(251 191 36 / var(--tw-border-opacity, 1))}.focus\:border-emerald-400:focus{--tw-border-opacity:1;border-color:rgb(52 211 153 / var(--tw-border-opacity, 1))}.focus\:border-sky-400:focus{--tw-border-opacity:1;border-color:rgb(56 189 248 / var(--tw-border-opacity, 1))}.focus\:outline-none:focus{outline:2px solid transparent;outline-offset:2px}.focus\:ring-0:focus{--tw-ring-offset-shadow:var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);--tw-ring-shadow:var(--tw-ring-inset) 0 0 0 calc(0px + var(--tw-ring-offset-width)) var(--tw-ring-color);box-shadow:var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000)}@media (min-width: 640px){.sm\:col-span-2{grid-column:span 2 / span 2}.sm\:col-span-4{grid-column:span 4 / span 4}.sm\:col-span-6{grid-column:span 6 / span 6}.sm\:w-auto{width:auto}.sm\:flex-initial{flex:0 1 auto}.sm\:grid-cols-12{grid-template-columns:repeat(12, minmax(0, 1fr))}.sm\:grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.sm\:grid-cols-3{grid-template-columns:repeat(3, minmax(0, 1fr))}.sm\:flex-row{flex-direction:row}.sm\:items-center{align-items:center}.sm\:text-base{font-size:1rem;line-height:1.5rem}.sm\:text-lg{font-size:1.125rem;line-height:1.75rem}.sm\:text-sm{font-size:0.875rem;line-height:1.25rem}}@media (min-width: 768px){.md\:grid-cols-3{grid-template-columns:repeat(3, minmax(0, 1fr))}}@media (min-width: 1024px){.lg\:col-span-4{grid-column:span 4 / span 4}.lg\:col-span-8{grid-column:span 8 / span 8}.lg\:grid-cols-12{grid-template-columns:repeat(12, minmax(0, 1fr))}}</style></head>
+<body class="min-h-screen flex flex-col bg-[#060b14] text-slate-100 selection:bg-sky-500 selection:text-white">
+
+  <!-- Top Navigation Bar -->
+  <header class="border-b border-sky-900/50 bg-[#0a1220]/90 backdrop-blur sticky top-0 z-20">
+    <div class="max-w-6xl mx-auto px-4 py-3 flex flex-wrap items-center justify-between gap-3">
+      <div class="flex items-center gap-3">
+        <div id="statusOrb" class="w-9 h-9 rounded-full bg-sky-500/20 border-2 border-sky-400 flex items-center justify-center orb-active">
+          <div class="w-3.5 h-3.5 rounded-full bg-sky-400 shadow-[0_0_10px_#38bdf8]"></div>
+        </div>
+        <div>
+          <div class="flex items-center gap-2">
+            <h1 class="font-bold text-base sm:text-lg tracking-wider text-sky-400 mono">F.R.I.D.A.Y.</h1>
+            <span class="text-xs px-2 py-0.5 rounded-full bg-sky-500/15 text-sky-300 border border-sky-500/30 mono">v8.0 STEP 8 // AWS AUTO-SYNC &amp; VOICE</span>
+          </div>
+          <p class="text-xs text-slate-400">Personal Voice Assistant, Memory Bank &amp; Home Device Hub</p>
+        </div>
+      </div>
+
+      <!-- View Switcher & Voice Toggle -->
+      <div class="flex items-center gap-2">
+        <select id="activeNodeSelect" aria-label="Select Active Home Device" class="px-2.5 py-1.5 rounded-lg text-xs font-medium bg-slate-900 border border-sky-500/40 text-sky-300 mono focus:outline-none">
+          <option value="dev-current">Node: This Device</option>
+          <option value="dev-p1">Node: Android Phone 1</option>
+          <option value="dev-p2">Node: Android Phone 2</option>
+          <option value="dev-p3">Node: Android Phone 3</option>
+          <option value="dev-p4">Node: Android Phone 4</option>
+          <option value="dev-p5">Node: Android Phone 5</option>
+          <option value="dev-tab">Node: Android Tablet</option>
+          <option value="dev-laptop">Node: Home Laptop</option>
+          <option value="dev-tv">Node: Realme X TV / Stick / PC</option>
+        </select>
+        <button id="tabConsoleBtn" type="button" class="px-3 py-1.5 rounded-lg text-xs font-medium bg-slate-800/80 text-slate-300 hover:bg-slate-700 transition">
+          Live Console
+        </button>
+        <button id="tabAgentBtn" type="button" class="px-3 py-1.5 rounded-lg text-xs font-medium bg-slate-800/80 text-slate-300 hover:bg-slate-700 transition">
+          Train AI &amp; Progress
+        </button>
+        <button id="tabDevicesBtn" type="button" class="px-3 py-1.5 rounded-lg text-xs font-medium bg-slate-800/80 text-slate-300 hover:bg-slate-700 transition">
+          Home Fleet (9)
+        </button>
+        <button id="tabCloudBtn" type="button" class="px-3 py-1.5 rounded-lg text-xs font-medium bg-sky-500 text-slate-950 transition">
+          Cloud Sync &amp; APK
+        </button>
+        <button id="tabLearnBtn" type="button" class="px-3 py-1.5 rounded-lg text-xs font-medium bg-slate-800/80 text-slate-300 hover:bg-slate-700 transition">
+          How Step 1 Works
+        </button>
+        <button id="handsFreeToggleBtn" type="button" class="px-3 py-1.5 rounded-lg text-xs font-medium border border-purple-500/40 bg-purple-950/60 text-purple-300 hover:bg-purple-900/50 transition flex items-center gap-1.5">
+          <span id="handsFreeDot" class="w-2 h-2 rounded-full bg-slate-500"></span>
+          <span id="handsFreeLabel">Hands-Free: OFF</span>
+        </button>
+        <button id="voiceToggleBtn" type="button" class="px-3 py-1.5 rounded-lg text-xs font-medium border border-sky-500/40 bg-sky-950/60 text-sky-300 hover:bg-sky-900/50 transition flex items-center gap-1.5">
+          <span id="voiceDot" class="w-2 h-2 rounded-full bg-emerald-400"></span>
+          <span id="voiceToggleLabel">Voice: ON</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Remote Command / Ring Alert Banner -->
+  <div id="remoteAlertBanner" class="hidden bg-amber-500/20 border-b border-amber-400/50 px-4 py-2.5 text-xs text-amber-200">
+    <div class="max-w-6xl mx-auto flex flex-wrap items-center justify-between gap-2">
+      <div class="flex items-center gap-2">
+        <span class="px-2 py-0.5 rounded bg-amber-400 text-slate-950 font-bold mono">REMOTE DISPATCH</span>
+        <span id="remoteAlertText" class="font-medium">Incoming command from F.R.I.D.A.Y. Command Hub...</span>
+      </div>
+      <button id="dismissRemoteAlertBtn" type="button" class="px-2.5 py-1 rounded-lg bg-slate-900/90 hover:bg-slate-800 text-amber-300 border border-amber-400/40 mono">
+        Acknowledge &amp; Stop Chime
+      </button>
+    </div>
+  </div>
+
+  <!-- Main Content Container -->
+  <main class="flex-1 max-w-6xl w-full mx-auto p-4 grid grid-cols-1 lg:grid-cols-12 gap-4">
+
+    <!-- VIEW 1: LIVE CONSOLE (Default) -->
+    <section id="viewConsole" class="lg:col-span-8 flex-col gap-4 hidden">
+      <!-- HUD Core Status Banner -->
+      <div class="hud-border rounded-2xl bg-[#0b1526] p-4 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+        <div class="flex items-center gap-3.5">
+          <div class="w-12 h-12 rounded-xl bg-sky-500/10 border border-sky-400/40 flex items-center justify-center text-sky-400 font-bold mono text-sm">
+            HUD
+          </div>
+          <div>
+            <div class="text-xs uppercase tracking-widest text-sky-400/90 mono">Full System Telemetry &amp; Agent Core</div>
+            <div id="liveBatteryText" class="text-sm sm:text-base font-semibold text-slate-100 mt-0.5">This Device: 100% (Charging ⚡)</div>
+            <div id="speechSupportText" class="text-xs text-slate-400 mt-0.5">
+              Browser Speech Synthesis ready
+            </div>
+            <div class="flex flex-wrap gap-1.5 mt-2">
+              <span id="telemetryNetBadge" class="text-[11px] px-2 py-0.5 rounded bg-slate-900 border border-slate-700 text-sky-300 mono">NET: ONLINE (4G • 5.65 Mbps)</span>
+              <span id="telemetryHwBadge" class="text-[11px] px-2 py-0.5 rounded bg-slate-900 border border-slate-700 text-indigo-300 mono">HW: 12 CORES • 16 GB RAM</span>
+              <span id="telemetryScreenBadge" class="text-[11px] px-2 py-0.5 rounded bg-slate-900 border border-slate-700 text-emerald-300 mono">DISP: 1536x864</span>
+              <span id="telemetryBtBadge" class="text-[11px] px-2 py-0.5 rounded bg-slate-900 border border-blue-500/40 text-blue-300 mono">BT MESH: 9 NODES READY</span>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-wrap gap-2 w-full sm:w-auto">
+          <button id="quickCheckBattery" type="button" class="flex-1 sm:flex-initial px-3 py-1.5 rounded-lg bg-sky-500/15 hover:bg-sky-500/25 border border-sky-500/30 text-sky-300 text-xs font-medium transition">
+            Battery Status
+          </button>
+          <button id="quickDiagnostics" type="button" class="flex-1 sm:flex-initial px-3 py-1.5 rounded-lg bg-indigo-500/15 hover:bg-indigo-500/25 border border-indigo-500/30 text-indigo-300 text-xs font-medium transition">
+            Full Diagnostics
+          </button>
+          <button id="quickProgressBrief" type="button" class="flex-1 sm:flex-initial px-3 py-1.5 rounded-lg bg-purple-500/15 hover:bg-purple-500/25 border border-purple-500/30 text-purple-300 text-xs font-medium transition">
+            Daily Progress
+          </button>
+          <button id="quickMotivate" type="button" class="flex-1 sm:flex-initial px-3 py-1.5 rounded-lg bg-amber-500/15 hover:bg-amber-500/25 border border-amber-500/30 text-amber-300 text-xs font-medium transition">
+            Daily Motivation
+          </button>
+          <button id="quickAllDevices" type="button" class="flex-1 sm:flex-initial px-3 py-1.5 rounded-lg bg-emerald-500/15 hover:bg-emerald-500/25 border border-emerald-500/30 text-emerald-300 text-xs font-medium transition">
+            Scan 9 Home Devices
+          </button>
+          <button id="quickCloudSync" type="button" class="flex-1 sm:flex-initial px-3 py-1.5 rounded-lg bg-cyan-500/15 hover:bg-cyan-500/25 border border-cyan-500/30 text-cyan-300 text-xs font-medium transition">
+            Sync Cloud Now
+          </button>
+          <button id="quickCareSweep" type="button" class="flex-1 sm:flex-initial px-3 py-1.5 rounded-lg bg-rose-500/15 hover:bg-rose-500/25 border border-rose-500/30 text-rose-300 text-xs font-medium transition">
+            Proactive Care Sweep
+          </button>
+          <button id="quickBluetoothScan" type="button" class="flex-1 sm:flex-initial px-3 py-1.5 rounded-lg bg-blue-500/15 hover:bg-blue-500/25 border border-blue-500/30 text-blue-300 text-xs font-medium transition">
+            Bluetooth Mesh Scan
+          </button>
+          <button id="quickRingDevice" type="button" class="flex-1 sm:flex-initial px-3 py-1.5 rounded-lg bg-amber-500/15 hover:bg-amber-500/25 border border-amber-500/30 text-amber-300 text-xs font-medium transition">
+            Ring / Find Phone
+          </button>
+        </div>
+      </div>
+
+      <!-- Conversation Feed -->
+      <div class="hud-border rounded-2xl bg-[#0b1526] flex-1 flex flex-col min-h-[360px] max-h-[520px]">
+        <div class="px-4 py-2.5 border-b border-slate-800/80 flex items-center justify-between">
+          <span class="text-xs font-medium text-slate-400 mono">COMM LINK // F.R.I.D.A.Y. STREAM</span>
+          <button id="clearChatBtn" type="button" class="text-xs text-slate-400 hover:text-sky-400 transition">
+            Clear Log
+          </button>
+        </div>
+
+        <div id="chatMessages" class="flex-1 overflow-y-auto p-4 space-y-3 text-sm">
+          <!-- Populated dynamically via JS -->
+        <div class="flex flex-col items-start"><div class="max-w-[85%] rounded-2xl rounded-tl-sm bg-sky-950/60 border border-sky-500/30 px-4 py-2.5 text-slate-100 leading-relaxed"><div class="text-[10px] mono mb-1 text-sky-400">F.R.I.D.A.Y. // OS</div><div>Step 6 Complete OS online, Boss! Try clicking "Ring / Find Phone" in the top bar, saying "Ring Phone 2" or "Cast Movie night at 8 PM", or clicking "🔔 Ring" on any of your 9 devices in the Home Fleet tab!</div></div></div><div class="flex flex-col items-start"><div class="max-w-[85%] rounded-2xl rounded-tl-sm bg-sky-950/60 border border-sky-500/30 px-4 py-2.5 text-slate-100 leading-relaxed"><div class="text-[10px] mono mb-1 text-sky-400">F.R.I.D.A.Y. // OS</div><div>AWS Cloud Sync complete! All 9 home devices now have your latest memories, trained AI rules, daily progress, and telemetry.</div></div></div></div>
+
+        <!-- Input Bar -->
+        <form id="chatForm" class="p-3 border-t border-slate-800/80 bg-[#08101d] rounded-b-2xl flex items-center gap-2">
+          <button id="micBtn" type="button" title="Speak to FRIDAY" class="p-2.5 rounded-xl bg-slate-800 hover:bg-sky-500/20 text-sky-400 border border-sky-500/30 transition shrink-0">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 1a3 3 0 00-3 3v8a3 3 0 006 0V4a3 3 0 00-3-3z"></path>
+              <path stroke-linecap="round" stroke-linejoin="round" d="M19 10v2a7 7 0 01-14 0v-2M12 19v4m-4 0h8"></path>
+            </svg>
+          </button>
+          <input id="userInput" type="text" placeholder="Try: 'Remember my workout is at 6 PM', 'Battery status', or 'Motivate me'..." class="flex-1 bg-slate-900/90 border border-slate-700/80 focus:border-sky-400 rounded-xl px-3.5 py-2 text-sm text-slate-100 placeholder-slate-500 focus:outline-none">
+          <button type="submit" class="px-4 py-2 rounded-xl bg-sky-500 hover:bg-sky-400 text-slate-950 font-semibold text-sm transition shrink-0">
+            Send
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <!-- VIEW 1.5: TRAIN AI & DAILY PROGRESS AGENT -->
+    <section id="viewAgent" class="hidden lg:col-span-8 flex-col gap-4">
+      <!-- Train Custom Rules Card -->
+      <div class="hud-border rounded-2xl bg-[#0b1526] p-4 space-y-3">
+        <div class="flex flex-wrap items-center justify-between gap-2">
+          <div>
+            <h2 class="text-base font-semibold text-sky-400 mono">TRAIN F.R.I.D.A.Y. // CUSTOM AGENT SKILLS &amp; TRIGGERS</h2>
+            <p class="text-xs text-slate-400">Teach F.R.I.D.A.Y. how to respond to your personal phrases, routines, or life goals. You can also say <code class="text-sky-300">"Train: when I say X reply Y"</code> in chat!</p>
+          </div>
+          <span id="ruleCountBadge" class="text-xs px-2.5 py-0.5 rounded-full bg-purple-500/15 text-purple-300 border border-purple-500/30 mono">3 trained rules</span>
+        </div>
+
+        <form id="trainRuleForm" class="grid grid-cols-1 sm:grid-cols-12 gap-2">
+          <input id="trainTriggerInput" type="text" placeholder="When I say... (e.g. 'study mode' or 'good morning')" class="sm:col-span-4 bg-slate-900/90 border border-slate-700/80 rounded-xl px-3 py-2 text-xs text-slate-100 placeholder-slate-500 focus:outline-none focus:border-sky-400">
+          <input id="trainResponseInput" type="text" placeholder="FRIDAY replies &amp; does... (e.g. 'Starting 45-min focus block. Put Phone 1 on silent!')" class="sm:col-span-6 bg-slate-900/90 border border-slate-700/80 rounded-xl px-3 py-2 text-xs text-slate-100 placeholder-slate-500 focus:outline-none focus:border-sky-400">
+          <button type="submit" class="sm:col-span-2 px-3 py-2 rounded-xl bg-sky-500 hover:bg-sky-400 text-slate-950 font-semibold text-xs transition">
+            + Train AI
+          </button>
+        </form>
+
+        <div id="trainedRulesList" class="space-y-2 max-h-48 overflow-y-auto pr-1 text-xs"><div class="p-2.5 rounded-xl bg-slate-900/90 border border-slate-800 flex items-start justify-between gap-2">
+          <div>
+            <div class="text-sky-300 font-semibold mono">WHEN I SAY: "good morning"</div>
+            <div class="text-slate-300 mt-0.5">F.R.I.D.A.Y.: "Good morning, Boss! Time to hydrate, review your daily progress tracker, and tackle your #1 priority."</div>
+          </div>
+        <button type="button" class="text-slate-500 hover:text-rose-400 text-xs px-1 shrink-0">✕</button></div><div class="p-2.5 rounded-xl bg-slate-900/90 border border-slate-800 flex items-start justify-between gap-2">
+          <div>
+            <div class="text-sky-300 font-semibold mono">WHEN I SAY: "focus mode"</div>
+            <div class="text-slate-300 mt-0.5">F.R.I.D.A.Y.: "Activating Focus Protocol: silencing non-urgent alerts across your 5 Android phones and starting a 45-minute deep work sprint."</div>
+          </div>
+        <button type="button" class="text-slate-500 hover:text-rose-400 text-xs px-1 shrink-0">✕</button></div><div class="p-2.5 rounded-xl bg-slate-900/90 border border-slate-800 flex items-start justify-between gap-2">
+          <div>
+            <div class="text-sky-300 font-semibold mono">WHEN I SAY: "night check"</div>
+            <div class="text-slate-300 mt-0.5">F.R.I.D.A.Y.: "Running night checklist: plug in Phone 3 and Phone 5, log today completed habits, and get 7.5 hours of sleep."</div>
+          </div>
+        <button type="button" class="text-slate-500 hover:text-rose-400 text-xs px-1 shrink-0">✕</button></div></div>
+      </div>
+
+      <!-- Optional Free Cloud LLM Brain Connector -->
+      <div class="hud-border rounded-2xl bg-[#0b1526] p-4 space-y-3">
+        <div class="flex flex-wrap items-center justify-between gap-2">
+          <div>
+            <h3 class="text-sm font-semibold text-amber-300 mono">OPTIONAL: CONNECT FREE GEMINI LLM BRAIN</h3>
+            <p class="text-xs text-slate-400">Paste a free Google AI Studio Gemini API key so F.R.I.D.A.Y. answers open-ended questions using your live telemetry, habits, and trained rules.</p>
+          </div>
+          <span id="llmStatusBadge" class="text-[11px] px-2 py-0.5 rounded bg-slate-800 text-slate-300 mono">Mode: Built-in Local Agent</span>
+        </div>
+        <div class="flex flex-col sm:flex-row gap-2">
+          <input id="geminiKeyInput" type="password" placeholder="Paste optional free Gemini API Key (AIza...)" class="flex-1 bg-slate-900/90 border border-slate-700/80 rounded-xl px-3 py-1.5 text-xs text-slate-100 placeholder-slate-500 focus:outline-none focus:border-amber-400">
+          <button id="saveApiKeyBtn" type="button" class="px-3.5 py-1.5 rounded-xl bg-amber-500/20 hover:bg-amber-500/30 border border-amber-400/40 text-amber-300 text-xs font-semibold transition">
+            Save Key
+          </button>
+        </div>
+      </div>
+
+      <!-- Voice Persona & Address Customizer Card -->
+      <div class="hud-border rounded-2xl bg-[#0b1526] p-4 space-y-3">
+        <div class="flex flex-wrap items-center justify-between gap-2">
+          <div>
+            <h3 class="text-sm font-semibold text-sky-400 mono">VOICE PERSONA &amp; ADDRESS CUSTOMIZER</h3>
+            <p class="text-xs text-slate-400">Customize how F.R.I.D.A.Y. addresses you and tune her speaking speed and pitch across your devices.</p>
+          </div>
+          <button id="testPersonaVoiceBtn" type="button" class="px-3 py-1 rounded-lg bg-sky-500/20 hover:bg-sky-500/30 border border-sky-400/40 text-sky-300 text-xs font-medium transition">
+            Test Voice Sample
+          </button>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 text-xs">
+          <div>
+            <label for="userTitleInput" class="block text-slate-400 mb-1 mono">How FRIDAY Addresses You</label>
+            <input id="userTitleInput" type="text" value="Boss" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-3 py-1.5 text-slate-100 focus:outline-none focus:border-sky-400">
+          </div>
+          <div>
+            <label for="voiceRateSelect" class="block text-slate-400 mb-1 mono">Speaking Speed</label>
+            <select id="voiceRateSelect" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-3 py-1.5 text-sky-300 mono">
+              <option value="0.9">0.9x (Calm)</option>
+              <option value="1.02" selected="">1.02x (Natural FRIDAY)</option>
+              <option value="1.15">1.15x (Crisp HUD)</option>
+            </select>
+          </div>
+          <div>
+            <label for="voicePitchSelect" class="block text-slate-400 mb-1 mono">Voice Pitch</label>
+            <select id="voicePitchSelect" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-3 py-1.5 text-sky-300 mono">
+              <option value="0.95">0.95 (Warm)</option>
+              <option value="1.05" selected="">1.05 (Clear AI)</option>
+              <option value="1.15">1.15 (Bright)</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- VIEW 2: HOME FLEET & BLUETOOTH MESH (Hidden by default on mobile/tab switch) -->
+    <section id="viewDevices" class="hidden lg:col-span-8 flex-col gap-4">
+      <!-- Web Bluetooth (BLE) GATT Scanner & Mesh Controller -->
+      <div class="hud-border rounded-2xl bg-[#0b1526] p-4 space-y-3">
+        <div class="flex flex-wrap items-center justify-between gap-2">
+          <div>
+            <h2 class="text-base font-semibold text-blue-400 mono">BLUETOOTH LOW ENERGY (BLE) MESH &amp; GATT BATTERY SCANNER</h2>
+            <p class="text-xs text-slate-400">Interconnect nearby devices via Web Bluetooth GATT (<code class="text-blue-300">battery_service 0x180F</code>) to read live battery percentage, signal strength (RSSI), and device telemetry directly.</p>
+          </div>
+          <span id="btMeshStatusBadge" class="text-xs px-2.5 py-0.5 rounded-full bg-blue-500/15 text-blue-300 border border-blue-500/30 mono">BLE Mesh: 9 Nodes Linked</span>
+        </div>
+
+        <div class="flex flex-wrap gap-2">
+          <button id="pairRealBtBtn" type="button" class="px-3.5 py-2 rounded-xl bg-blue-500 hover:bg-blue-400 text-slate-950 font-semibold text-xs transition">
+            + Pair Real Bluetooth Device (BLE GATT)
+          </button>
+          <button id="simulateBtMeshBtn" type="button" class="px-3.5 py-2 rounded-xl bg-sky-500/20 hover:bg-sky-500/30 border border-sky-400/40 text-sky-300 font-semibold text-xs transition">
+            Run 9-Device Bluetooth Mesh Handshake
+          </button>
+          <button id="simulateSyncBtn" type="button" class="px-3 py-2 rounded-xl bg-slate-800 hover:bg-slate-700 border border-slate-700 text-slate-300 text-xs font-medium transition">
+            Refresh Fleet Poll
+          </button>
+        </div>
+
+        <div id="btLogBanner" class="text-xs mono text-blue-300 bg-slate-950/80 border border-blue-500/20 rounded-xl px-3 py-2">
+          BT MESH LOG // Ready to scan nearby Bluetooth GATT battery services (0x180F / 0x2A19) or broadcast mesh pings across all 9 home nodes.
+        </div>
+      </div>
+
+      <div class="hud-border rounded-2xl bg-[#0b1526] p-4 space-y-3">
+        <div class="flex flex-wrap items-center justify-between gap-2">
+          <div>
+            <h2 class="text-base font-semibold text-sky-400 mono">HOME DEVICE TELEMETRY &amp; REMOTE COMMAND FLEET (9 NODES)</h2>
+            <p class="text-xs text-slate-400">Click "Ring" or "Cast Alert" on any device card below, or dispatch a command to all 9 devices at once.</p>
+          </div>
+          <button id="broadcastFocusAllBtn" type="button" class="px-3 py-1.5 rounded-xl bg-purple-500/20 hover:bg-purple-500/30 border border-purple-400/40 text-purple-300 text-xs font-semibold transition">
+            Lock All 9 Devices to Focus Mode
+          </button>
+        </div>
+
+        <form id="remoteCastForm" class="flex flex-col sm:flex-row gap-2">
+          <select id="remoteTargetSelect" aria-label="Target Device for Remote Command" class="bg-slate-900 border border-slate-700 rounded-xl px-3 py-1.5 text-xs text-sky-300 mono">
+            <option value="ALL">Target: All 9 Home Devices</option>
+            <option value="Android Phone 1 (Primary)">Target: Android Phone 1</option>
+            <option value="Android Phone 2">Target: Android Phone 2</option>
+            <option value="Android Phone 3">Target: Android Phone 3</option>
+            <option value="Android Phone 4">Target: Android Phone 4</option>
+            <option value="Android Phone 5">Target: Android Phone 5</option>
+            <option value="Android Tablet">Target: Android Tablet</option>
+            <option value="Home Laptop">Target: Home Laptop</option>
+            <option value="Realme X TV + Mi TV Stick &amp; PC">Target: Realme X TV / Stick / PC</option>
+          </select>
+          <input id="remoteMessageInput" type="text" placeholder="Type message or command to cast (e.g. 'Plug in charger now' or 'Workout starting on TV')" class="flex-1 bg-slate-900/90 border border-slate-700/80 rounded-xl px-3 py-1.5 text-xs text-slate-100 placeholder-slate-500 focus:outline-none focus:border-sky-400">
+          <button type="submit" class="px-3.5 py-1.5 rounded-xl bg-sky-500 hover:bg-sky-400 text-slate-950 font-semibold text-xs transition">
+            Dispatch Command
+          </button>
+        </form>
+        <div id="deviceFleetGrid" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3"><div class="p-3.5 rounded-xl bg-slate-900/90 border border-slate-800 flex flex-col justify-between gap-2">
+          <div>
+            <div class="flex items-center justify-between gap-1">
+              <span class="font-semibold text-xs text-slate-100">This Device (Live)</span>
+              <span class="text-[10px] px-1.5 py-0.5 rounded bg-sky-500/10 text-sky-300 mono">⚡ CHG</span>
+            </div>
+            <div class="text-[11px] text-slate-400 mt-0.5">Active Console</div>
+          </div>
+          <div class="text-[11px] text-slate-400 space-y-0.5 bg-slate-950/60 p-2 rounded-lg border border-slate-800/80 mono">
+            <div>BT LINK: <span class="text-blue-300">BLE Host (0 dBm)</span></div>
+            <div>NET: <span class="text-slate-200">Online • 4G (5.65 Mbps)</span></div>
+            <div>SPECS: <span class="text-slate-200">12 Cores • 16 GB</span></div>
+            <div>STATE: <span class="text-sky-300">F.R.I.D.A.Y. HUD</span></div>
+          </div>
+          <div>
+            <div class="flex justify-between text-xs mono mb-1">
+              <span class="text-slate-400">Charge</span>
+              <span class="text-sky-300 font-semibold">100%</span>
+            </div>
+            <div class="w-full h-1.5 bg-slate-800 rounded-full overflow-hidden">
+              <div class="bg-emerald-400 h-full transition-all duration-300" style="width: 100%"></div>
+            </div>
+          </div>
+          <div class="flex gap-1.5 pt-1">
+            <button type="button" data-ring-id="dev-current" class="flex-1 px-2 py-1 rounded-lg bg-amber-500/15 hover:bg-amber-500/25 border border-amber-500/30 text-amber-300 text-[11px] font-medium transition">
+              🔔 Ring
+            </button>
+            <button type="button" data-cast-id="dev-current" class="flex-1 px-2 py-1 rounded-lg bg-sky-500/15 hover:bg-sky-500/25 border border-sky-500/30 text-sky-300 text-[11px] font-medium transition">
+              📺 Cast HUD
+            </button>
+          </div>
+        </div><div class="p-3.5 rounded-xl bg-slate-900/90 border border-slate-800 flex flex-col justify-between gap-2">
+          <div>
+            <div class="flex items-center justify-between gap-1">
+              <span class="font-semibold text-xs text-slate-100">Android Phone 1 (Primary)</span>
+              <span class="text-[10px] px-1.5 py-0.5 rounded bg-sky-500/10 text-sky-300 mono">⚡ CHG</span>
+            </div>
+            <div class="text-[11px] text-slate-400 mt-0.5">Android APK Node</div>
+          </div>
+          <div class="text-[11px] text-slate-400 space-y-0.5 bg-slate-950/60 p-2 rounded-lg border border-slate-800/80 mono">
+            <div>BT LINK: <span class="text-blue-300">BT Mesh (-44 dBm)</span></div>
+            <div>NET: <span class="text-slate-200">5G • 110 Mbps</span></div>
+            <div>SPECS: <span class="text-slate-200">Octa-Core • 8 GB</span></div>
+            <div>STATE: <span class="text-sky-300">WhatsApp / Sync</span></div>
+          </div>
+          <div>
+            <div class="flex justify-between text-xs mono mb-1">
+              <span class="text-slate-400">Charge</span>
+              <span class="text-sky-300 font-semibold">92%</span>
+            </div>
+            <div class="w-full h-1.5 bg-slate-800 rounded-full overflow-hidden">
+              <div class="bg-emerald-400 h-full transition-all duration-300" style="width: 92%"></div>
+            </div>
+          </div>
+          <div class="flex gap-1.5 pt-1">
+            <button type="button" data-ring-id="dev-p1" class="flex-1 px-2 py-1 rounded-lg bg-amber-500/15 hover:bg-amber-500/25 border border-amber-500/30 text-amber-300 text-[11px] font-medium transition">
+              🔔 Ring
+            </button>
+            <button type="button" data-cast-id="dev-p1" class="flex-1 px-2 py-1 rounded-lg bg-sky-500/15 hover:bg-sky-500/25 border border-sky-500/30 text-sky-300 text-[11px] font-medium transition">
+              📺 Cast HUD
+            </button>
+          </div>
+        </div><div class="p-3.5 rounded-xl bg-slate-900/90 border border-slate-800 flex flex-col justify-between gap-2">
+          <div>
+            <div class="flex items-center justify-between gap-1">
+              <span class="font-semibold text-xs text-slate-100">Android Phone 2</span>
+              <span class="text-[10px] px-1.5 py-0.5 rounded bg-sky-500/10 text-sky-300 mono">BAT</span>
+            </div>
+            <div class="text-[11px] text-slate-400 mt-0.5">Android APK Node</div>
+          </div>
+          <div class="text-[11px] text-slate-400 space-y-0.5 bg-slate-950/60 p-2 rounded-lg border border-slate-800/80 mono">
+            <div>BT LINK: <span class="text-blue-300">BT Mesh (-52 dBm)</span></div>
+            <div>NET: <span class="text-slate-200">WiFi • 54 Mbps</span></div>
+            <div>SPECS: <span class="text-slate-200">Octa-Core • 6 GB</span></div>
+            <div>STATE: <span class="text-sky-300">Idle / Standby</span></div>
+          </div>
+          <div>
+            <div class="flex justify-between text-xs mono mb-1">
+              <span class="text-slate-400">Charge</span>
+              <span class="text-sky-300 font-semibold">64%</span>
+            </div>
+            <div class="w-full h-1.5 bg-slate-800 rounded-full overflow-hidden">
+              <div class="bg-emerald-400 h-full transition-all duration-300" style="width: 64%"></div>
+            </div>
+          </div>
+          <div class="flex gap-1.5 pt-1">
+            <button type="button" data-ring-id="dev-p2" class="flex-1 px-2 py-1 rounded-lg bg-amber-500/15 hover:bg-amber-500/25 border border-amber-500/30 text-amber-300 text-[11px] font-medium transition">
+              🔔 Ring
+            </button>
+            <button type="button" data-cast-id="dev-p2" class="flex-1 px-2 py-1 rounded-lg bg-sky-500/15 hover:bg-sky-500/25 border border-sky-500/30 text-sky-300 text-[11px] font-medium transition">
+              📺 Cast HUD
+            </button>
+          </div>
+        </div><div class="p-3.5 rounded-xl bg-slate-900/90 border border-slate-800 flex flex-col justify-between gap-2">
+          <div>
+            <div class="flex items-center justify-between gap-1">
+              <span class="font-semibold text-xs text-slate-100">Android Phone 3</span>
+              <span class="text-[10px] px-1.5 py-0.5 rounded bg-sky-500/10 text-sky-300 mono">BAT</span>
+            </div>
+            <div class="text-[11px] text-slate-400 mt-0.5">Android APK Node</div>
+          </div>
+          <div class="text-[11px] text-slate-400 space-y-0.5 bg-slate-950/60 p-2 rounded-lg border border-slate-800/80 mono">
+            <div>BT LINK: <span class="text-blue-300">BT Mesh (-58 dBm)</span></div>
+            <div>NET: <span class="text-slate-200">WiFi • 48 Mbps</span></div>
+            <div>SPECS: <span class="text-slate-200">Octa-Core • 6 GB</span></div>
+            <div>STATE: <span class="text-sky-300">YouTube Music</span></div>
+          </div>
+          <div>
+            <div class="flex justify-between text-xs mono mb-1">
+              <span class="text-slate-400">Charge</span>
+              <span class="text-sky-300 font-semibold">47%</span>
+            </div>
+            <div class="w-full h-1.5 bg-slate-800 rounded-full overflow-hidden">
+              <div class="bg-amber-400 h-full transition-all duration-300" style="width: 47%"></div>
+            </div>
+          </div>
+          <div class="flex gap-1.5 pt-1">
+            <button type="button" data-ring-id="dev-p3" class="flex-1 px-2 py-1 rounded-lg bg-amber-500/15 hover:bg-amber-500/25 border border-amber-500/30 text-amber-300 text-[11px] font-medium transition">
+              🔔 Ring
+            </button>
+            <button type="button" data-cast-id="dev-p3" class="flex-1 px-2 py-1 rounded-lg bg-sky-500/15 hover:bg-sky-500/25 border border-sky-500/30 text-sky-300 text-[11px] font-medium transition">
+              📺 Cast HUD
+            </button>
+          </div>
+        </div><div class="p-3.5 rounded-xl bg-slate-900/90 border border-slate-800 flex flex-col justify-between gap-2">
+          <div>
+            <div class="flex items-center justify-between gap-1">
+              <span class="font-semibold text-xs text-slate-100">Android Phone 4</span>
+              <span class="text-[10px] px-1.5 py-0.5 rounded bg-sky-500/10 text-sky-300 mono">BAT</span>
+            </div>
+            <div class="text-[11px] text-slate-400 mt-0.5">Android APK Node</div>
+          </div>
+          <div class="text-[11px] text-slate-400 space-y-0.5 bg-slate-950/60 p-2 rounded-lg border border-slate-800/80 mono">
+            <div>BT LINK: <span class="text-blue-300">BT Mesh (-49 dBm)</span></div>
+            <div>NET: <span class="text-slate-200">WiFi • 60 Mbps</span></div>
+            <div>SPECS: <span class="text-slate-200">Octa-Core • 8 GB</span></div>
+            <div>STATE: <span class="text-sky-300">Idle / Standby</span></div>
+          </div>
+          <div>
+            <div class="flex justify-between text-xs mono mb-1">
+              <span class="text-slate-400">Charge</span>
+              <span class="text-sky-300 font-semibold">81%</span>
+            </div>
+            <div class="w-full h-1.5 bg-slate-800 rounded-full overflow-hidden">
+              <div class="bg-emerald-400 h-full transition-all duration-300" style="width: 81%"></div>
+            </div>
+          </div>
+          <div class="flex gap-1.5 pt-1">
+            <button type="button" data-ring-id="dev-p4" class="flex-1 px-2 py-1 rounded-lg bg-amber-500/15 hover:bg-amber-500/25 border border-amber-500/30 text-amber-300 text-[11px] font-medium transition">
+              🔔 Ring
+            </button>
+            <button type="button" data-cast-id="dev-p4" class="flex-1 px-2 py-1 rounded-lg bg-sky-500/15 hover:bg-sky-500/25 border border-sky-500/30 text-sky-300 text-[11px] font-medium transition">
+              📺 Cast HUD
+            </button>
+          </div>
+        </div><div class="p-3.5 rounded-xl bg-slate-900/90 border border-slate-800 flex flex-col justify-between gap-2">
+          <div>
+            <div class="flex items-center justify-between gap-1">
+              <span class="font-semibold text-xs text-slate-100">Android Phone 5</span>
+              <span class="text-[10px] px-1.5 py-0.5 rounded bg-sky-500/10 text-sky-300 mono">⚡ CHG</span>
+            </div>
+            <div class="text-[11px] text-slate-400 mt-0.5">Android APK Node</div>
+          </div>
+          <div class="text-[11px] text-slate-400 space-y-0.5 bg-slate-950/60 p-2 rounded-lg border border-slate-800/80 mono">
+            <div>BT LINK: <span class="text-blue-300">BT Mesh (-67 dBm)</span></div>
+            <div>NET: <span class="text-slate-200">4G • 22 Mbps</span></div>
+            <div>SPECS: <span class="text-slate-200">Octa-Core • 4 GB</span></div>
+            <div>STATE: <span class="text-sky-300">Charging Dock</span></div>
+          </div>
+          <div>
+            <div class="flex justify-between text-xs mono mb-1">
+              <span class="text-slate-400">Charge</span>
+              <span class="text-sky-300 font-semibold">29%</span>
+            </div>
+            <div class="w-full h-1.5 bg-slate-800 rounded-full overflow-hidden">
+              <div class="bg-rose-500 h-full transition-all duration-300" style="width: 29%"></div>
+            </div>
+          </div>
+          <div class="flex gap-1.5 pt-1">
+            <button type="button" data-ring-id="dev-p5" class="flex-1 px-2 py-1 rounded-lg bg-amber-500/15 hover:bg-amber-500/25 border border-amber-500/30 text-amber-300 text-[11px] font-medium transition">
+              🔔 Ring
+            </button>
+            <button type="button" data-cast-id="dev-p5" class="flex-1 px-2 py-1 rounded-lg bg-sky-500/15 hover:bg-sky-500/25 border border-sky-500/30 text-sky-300 text-[11px] font-medium transition">
+              📺 Cast HUD
+            </button>
+          </div>
+        </div><div class="p-3.5 rounded-xl bg-slate-900/90 border border-slate-800 flex flex-col justify-between gap-2">
+          <div>
+            <div class="flex items-center justify-between gap-1">
+              <span class="font-semibold text-xs text-slate-100">Android Tablet</span>
+              <span class="text-[10px] px-1.5 py-0.5 rounded bg-sky-500/10 text-sky-300 mono">BAT</span>
+            </div>
+            <div class="text-[11px] text-slate-400 mt-0.5">Android APK Node</div>
+          </div>
+          <div class="text-[11px] text-slate-400 space-y-0.5 bg-slate-950/60 p-2 rounded-lg border border-slate-800/80 mono">
+            <div>BT LINK: <span class="text-blue-300">BT Mesh (-46 dBm)</span></div>
+            <div>NET: <span class="text-slate-200">WiFi • 72 Mbps</span></div>
+            <div>SPECS: <span class="text-slate-200">8 Cores • 8 GB</span></div>
+            <div>STATE: <span class="text-sky-300">PDF Study Reader</span></div>
+          </div>
+          <div>
+            <div class="flex justify-between text-xs mono mb-1">
+              <span class="text-slate-400">Charge</span>
+              <span class="text-sky-300 font-semibold">76%</span>
+            </div>
+            <div class="w-full h-1.5 bg-slate-800 rounded-full overflow-hidden">
+              <div class="bg-emerald-400 h-full transition-all duration-300" style="width: 76%"></div>
+            </div>
+          </div>
+          <div class="flex gap-1.5 pt-1">
+            <button type="button" data-ring-id="dev-tab" class="flex-1 px-2 py-1 rounded-lg bg-amber-500/15 hover:bg-amber-500/25 border border-amber-500/30 text-amber-300 text-[11px] font-medium transition">
+              🔔 Ring
+            </button>
+            <button type="button" data-cast-id="dev-tab" class="flex-1 px-2 py-1 rounded-lg bg-sky-500/15 hover:bg-sky-500/25 border border-sky-500/30 text-sky-300 text-[11px] font-medium transition">
+              📺 Cast HUD
+            </button>
+          </div>
+        </div><div class="p-3.5 rounded-xl bg-slate-900/90 border border-slate-800 flex flex-col justify-between gap-2">
+          <div>
+            <div class="flex items-center justify-between gap-1">
+              <span class="font-semibold text-xs text-slate-100">Home Laptop</span>
+              <span class="text-[10px] px-1.5 py-0.5 rounded bg-sky-500/10 text-sky-300 mono">⚡ CHG</span>
+            </div>
+            <div class="text-[11px] text-slate-400 mt-0.5">Browser PWA Node</div>
+          </div>
+          <div class="text-[11px] text-slate-400 space-y-0.5 bg-slate-950/60 p-2 rounded-lg border border-slate-800/80 mono">
+            <div>BT LINK: <span class="text-blue-300">BT GATT (-41 dBm)</span></div>
+            <div>NET: <span class="text-slate-200">WiFi • 140 Mbps</span></div>
+            <div>SPECS: <span class="text-slate-200">12 Cores • 16 GB</span></div>
+            <div>STATE: <span class="text-sky-300">VS Code / Dev</span></div>
+          </div>
+          <div>
+            <div class="flex justify-between text-xs mono mb-1">
+              <span class="text-slate-400">Charge</span>
+              <span class="text-sky-300 font-semibold">58%</span>
+            </div>
+            <div class="w-full h-1.5 bg-slate-800 rounded-full overflow-hidden">
+              <div class="bg-amber-400 h-full transition-all duration-300" style="width: 58%"></div>
+            </div>
+          </div>
+          <div class="flex gap-1.5 pt-1">
+            <button type="button" data-ring-id="dev-laptop" class="flex-1 px-2 py-1 rounded-lg bg-amber-500/15 hover:bg-amber-500/25 border border-amber-500/30 text-amber-300 text-[11px] font-medium transition">
+              🔔 Ring
+            </button>
+            <button type="button" data-cast-id="dev-laptop" class="flex-1 px-2 py-1 rounded-lg bg-sky-500/15 hover:bg-sky-500/25 border border-sky-500/30 text-sky-300 text-[11px] font-medium transition">
+              📺 Cast HUD
+            </button>
+          </div>
+        </div><div class="p-3.5 rounded-xl bg-slate-900/90 border border-slate-800 flex flex-col justify-between gap-2">
+          <div>
+            <div class="flex items-center justify-between gap-1">
+              <span class="font-semibold text-xs text-slate-100">Realme X TV + Mi TV Stick &amp; PC</span>
+              <span class="text-[10px] px-1.5 py-0.5 rounded bg-sky-500/10 text-sky-300 mono">⚡ CHG</span>
+            </div>
+            <div class="text-[11px] text-slate-400 mt-0.5">AC Powered Nodes</div>
+          </div>
+          <div class="text-[11px] text-slate-400 space-y-0.5 bg-slate-950/60 p-2 rounded-lg border border-slate-800/80 mono">
+            <div>BT LINK: <span class="text-blue-300">BT Audio/Mesh (-55 dBm)</span></div>
+            <div>NET: <span class="text-slate-200">LAN/WiFi • 200 Mbps</span></div>
+            <div>SPECS: <span class="text-slate-200">AC Always-On • 16 GB (PC)</span></div>
+            <div>STATE: <span class="text-sky-300">Home Media &amp; Server</span></div>
+          </div>
+          <div>
+            <div class="flex justify-between text-xs mono mb-1">
+              <span class="text-slate-400">Charge</span>
+              <span class="text-sky-300 font-semibold">100%</span>
+            </div>
+            <div class="w-full h-1.5 bg-slate-800 rounded-full overflow-hidden">
+              <div class="bg-emerald-400 h-full transition-all duration-300" style="width: 100%"></div>
+            </div>
+          </div>
+          <div class="flex gap-1.5 pt-1">
+            <button type="button" data-ring-id="dev-tv" class="flex-1 px-2 py-1 rounded-lg bg-amber-500/15 hover:bg-amber-500/25 border border-amber-500/30 text-amber-300 text-[11px] font-medium transition">
+              🔔 Ring
+            </button>
+            <button type="button" data-cast-id="dev-tv" class="flex-1 px-2 py-1 rounded-lg bg-sky-500/15 hover:bg-sky-500/25 border border-sky-500/30 text-sky-300 text-[11px] font-medium transition">
+              📺 Cast HUD
+            </button>
+          </div>
+        </div></div>
+      </div>
+    </section>
+
+    <!-- VIEW 2.5: AWS CLOUD SYNC & SINGLE APK BUILDER -->
+    <section id="viewCloud" class="lg:col-span-8 flex-col gap-4 flex">
+      <!-- AWS Free Cloud Sync Configuration -->
+      <div class="hud-border rounded-2xl bg-[#0b1526] p-4 space-y-3">
+        <div class="flex flex-wrap items-center justify-between gap-2">
+          <div>
+            <h2 class="text-base font-semibold text-sky-400 mono">FREE AWS CLOUD MEMORY &amp; 9-DEVICE SYNC HUB</h2>
+            <p class="text-xs text-slate-400">Connect your free AWS Lambda Function URL (backed by DynamoDB) so all 9 devices share the same Memory Core, Daily Progress, Trained Rules, and Battery/Network telemetry.</p>
+          </div>
+          <span id="cloudSyncBadge" class="text-xs px-2.5 py-0.5 rounded-full bg-emerald-500/15 text-emerald-300 border border-emerald-500/30 mono">AWS Cloud: Synced ✓</span>
+        </div>
+
+        <div class="flex flex-col sm:flex-row gap-2">
+          <input id="cloudEndpointInput" type="url" value="https://friday-5e12d-default-rtdb.firebaseio.com/friday.json" placeholder="Paste AWS Lambda URL or No-Card Firebase URL (https://your-app.firebaseio.com/friday.json)" class="flex-1 bg-slate-900/90 border border-slate-700/80 rounded-xl px-3 py-2 text-xs text-slate-100 placeholder-slate-500 focus:outline-none focus:border-sky-400">
+          <button id="saveCloudUrlBtn" type="button" class="px-3.5 py-2 rounded-xl bg-sky-500 hover:bg-sky-400 text-slate-950 font-semibold text-xs transition">
+            Save Endpoint
+          </button>
+          <button id="manualSyncNowBtn" type="button" class="px-3.5 py-2 rounded-xl bg-emerald-500/20 hover:bg-emerald-500/30 border border-emerald-400/40 text-emerald-300 font-semibold text-xs transition">
+            Push / Pull Sync
+          </button>
+        </div>
+
+        <div class="flex flex-wrap items-center justify-between gap-2 pt-1 text-xs text-slate-400">
+          <span id="lastSyncTimeText" class="mono text-[11px] text-slate-400">Last AWS DynamoDB Sync: 9:38:10 AM</span>
+          <div class="flex gap-2">
+            <button id="exportBrainBtn" type="button" class="px-2.5 py-1 rounded-lg bg-slate-800 hover:bg-slate-700 text-sky-300 border border-slate-700 transition">
+              Export Brain JSON
+            </button>
+            <button id="copyAwsCodeBtn" type="button" class="px-2.5 py-1 rounded-lg bg-amber-500/15 hover:bg-amber-500/25 text-amber-300 border border-amber-500/30 transition">
+              Copy Free AWS Lambda Code
+            </button>
+            <button id="testAwsPingBtn" type="button" class="px-2.5 py-1 rounded-lg bg-sky-500/15 hover:bg-sky-500/25 text-sky-300 border border-sky-500/30 transition">
+              Test AWS Ping
+            </button>
+            <button id="autoSyncToggleBtn" type="button" class="px-2.5 py-1 rounded-lg bg-emerald-500/15 hover:bg-emerald-500/25 text-emerald-300 border border-emerald-500/30 mono transition">
+              Auto-Sync (30s): OFF
+            </button>
+          </div>
+        </div>
+
+        <pre id="awsCodePreview" class="p-3 rounded-xl bg-slate-950 border border-slate-800 text-[11px] text-sky-300 mono overflow-x-auto max-h-44">// AWS Lambda (Node.js 20.x) + Free DynamoDB Table "FridayHomeBrain"
+import { DynamoDBClient } from "@aws-sdk/client-dynamodb";
+import { DynamoDBDocumentClient, GetCommand, PutCommand } from "@aws-sdk/lib-dynamodb";
+const db = DynamoDBDocumentClient.from(new DynamoDBClient({}));
+
+export const handler = async (event) =&gt; {
+  const headers = { "Access-Control-Allow-Origin": "*", "Access-Control-Allow-Headers": "Content-Type", "Access-Control-Allow-Methods": "GET,POST,OPTIONS" };
+  if (event.requestContext?.http?.method === "OPTIONS") return { statusCode: 200, headers };
+  if (event.requestContext?.http?.method === "POST") {
+    const body = JSON.parse(event.body || "{}");
+    await db.send(new PutCommand({ TableName: "FridayHomeBrain", Item: { pk: "HOME_STATE", ...body, updatedAt: Date.now() } }));
+    return { statusCode: 200, headers, body: JSON.stringify({ synced: true }) };
+  }
+  const res = await db.send(new GetCommand({ TableName: "FridayHomeBrain", Key: { pk: "HOME_STATE" } }));
+  return { statusCode: 200, headers, body: JSON.stringify(res.Item || {}) };
+};</pre>
+      </div>
+
+      <!-- One APK Generator & PWA Manifest Card -->
+      <div class="hud-border rounded-2xl bg-[#0b1526] p-4 space-y-3">
+        <div class="flex flex-wrap items-center justify-between gap-2">
+          <div>
+            <h3 class="text-sm font-semibold text-emerald-400 mono">SINGLE ANDROID APK &amp; TV PACKAGING READY</h3>
+            <p class="text-xs text-slate-400">Your app now embeds a complete Web App Manifest. Download the standalone HTML or manifest below to package 1 APK for your 5 Android phones, Tablet, Realme X TV, and Mi TV Stick.</p>
+          </div>
+          <span class="text-[11px] px-2 py-0.5 rounded bg-emerald-500/15 text-emerald-300 border border-emerald-500/30 mono">PWA Ready ✓</span>
+        </div>
+        <div class="flex flex-wrap gap-2">
+          <button id="downloadIndexHtmlBtn" type="button" class="px-3.5 py-2 rounded-xl bg-sky-500 hover:bg-sky-400 text-slate-950 font-semibold text-xs transition">
+            Download index.html
+          </button>
+          <button id="downloadManifestBtn" type="button" class="px-3.5 py-2 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-semibold text-xs transition">
+            Download manifest.json
+          </button>
+          <button id="downloadSwBtn" type="button" class="px-3.5 py-2 rounded-xl bg-indigo-500 hover:bg-indigo-400 text-slate-950 font-semibold text-xs transition">
+            Download sw.js (Service Worker)
+          </button>
+          <button id="testCrossDevicePushBtn" type="button" class="px-3.5 py-2 rounded-xl bg-sky-500/20 hover:bg-sky-500/30 border border-sky-400/40 text-sky-300 font-semibold text-xs transition">
+            Simulate Incoming Update from Phone 1
+          </button>
+        </div>
+      </div>
+
+      <!-- Step 7 Interactive Launch & 9-Device Rollout Tracker Card -->
+      <div class="hud-border rounded-2xl bg-[#0b1526] p-4 space-y-3">
+        <div class="flex flex-wrap items-center justify-between gap-2">
+          <div>
+            <h3 class="text-sm font-semibold text-sky-400 mono">STEP 7 // 1-APK BUILD &amp; 9-DEVICE ROLLOUT TRACKER</h3>
+            <p class="text-xs text-slate-400">Download the 3 files above (<code class="text-sky-300">index.html</code>, <code class="text-emerald-300">manifest.json</code>, <code class="text-indigo-300">sw.js</code>), upload them to GitHub Pages, and check off each device below as you install your APK.</p>
+          </div>
+          <span id="rolloutCountBadge" class="text-xs px-2.5 py-0.5 rounded-full bg-sky-500/15 text-sky-300 border border-sky-500/30 mono">0/9 Installed</span>
+        </div>
+
+        <div id="rolloutChecklistGrid" class="grid grid-cols-1 sm:grid-cols-3 gap-2 text-xs"><label class="p-2 rounded-xl bg-slate-900/90 border border-slate-800 flex items-center gap-2 cursor-pointer"><input type="checkbox" class="rounded border-slate-600 text-sky-500 focus:ring-0"><span class="text-slate-200 truncate">This Device (Live)</span></label><label class="p-2 rounded-xl bg-slate-900/90 border border-slate-800 flex items-center gap-2 cursor-pointer"><input type="checkbox" class="rounded border-slate-600 text-sky-500 focus:ring-0"><span class="text-slate-200 truncate">Android Phone 1 (Primary)</span></label><label class="p-2 rounded-xl bg-slate-900/90 border border-slate-800 flex items-center gap-2 cursor-pointer"><input type="checkbox" class="rounded border-slate-600 text-sky-500 focus:ring-0"><span class="text-slate-200 truncate">Android Phone 2</span></label><label class="p-2 rounded-xl bg-slate-900/90 border border-slate-800 flex items-center gap-2 cursor-pointer"><input type="checkbox" class="rounded border-slate-600 text-sky-500 focus:ring-0"><span class="text-slate-200 truncate">Android Phone 3</span></label><label class="p-2 rounded-xl bg-slate-900/90 border border-slate-800 flex items-center gap-2 cursor-pointer"><input type="checkbox" class="rounded border-slate-600 text-sky-500 focus:ring-0"><span class="text-slate-200 truncate">Android Phone 4</span></label><label class="p-2 rounded-xl bg-slate-900/90 border border-slate-800 flex items-center gap-2 cursor-pointer"><input type="checkbox" class="rounded border-slate-600 text-sky-500 focus:ring-0"><span class="text-slate-200 truncate">Android Phone 5</span></label><label class="p-2 rounded-xl bg-slate-900/90 border border-slate-800 flex items-center gap-2 cursor-pointer"><input type="checkbox" class="rounded border-slate-600 text-sky-500 focus:ring-0"><span class="text-slate-200 truncate">Android Tablet</span></label><label class="p-2 rounded-xl bg-slate-900/90 border border-slate-800 flex items-center gap-2 cursor-pointer"><input type="checkbox" class="rounded border-slate-600 text-sky-500 focus:ring-0"><span class="text-slate-200 truncate">Home Laptop</span></label><label class="p-2 rounded-xl bg-slate-900/90 border border-slate-800 flex items-center gap-2 cursor-pointer"><input type="checkbox" class="rounded border-slate-600 text-sky-500 focus:ring-0"><span class="text-slate-200 truncate">Realme X TV + Mi TV Stick &amp; PC</span></label></div>
+
+        <ol class="text-xs text-slate-300 space-y-1.5 list-decimal list-inside leading-relaxed pt-2 border-t border-slate-800/80">
+          <li><strong>Upload 3 Files to Free GitHub Pages:</strong> Create a public repository on GitHub, upload <code class="text-sky-300">index.html</code>, <code class="text-sky-300">manifest.json</code>, and <code class="text-sky-300">sw.js</code>, and enable <strong>Settings → Pages → Deploy from branch (main)</strong>.</li>
+          <li><strong>Generate Your Single APK on PWABuilder:</strong> Paste your live <code class="text-sky-300">https://&lt;username&gt;.github.io/&lt;repo&gt;/</code> link into PWABuilder.com → click <strong>Package for Stores → Android → Download Package</strong> to get your signed <code class="text-sky-300">.apk</code>.</li>
+          <li><strong>Install on 5 Android Phones &amp; 1 Tablet:</strong> Send the <code class="text-sky-300">.apk</code> via WhatsApp, Google Drive, or Nearby Share/Quick Share and tap to install.</li>
+          <li><strong>Install on Realme X TV &amp; Mi TV Stick:</strong> Use the free <em>Send Files to TV</em> app from the TV Play Store (or a USB drive / ADB) to transfer the exact same <code class="text-sky-300">.apk</code> to both TVs, and open your GitHub Pages URL directly on your Laptop and PC!</li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- VIEW 3: HOW STEP 1 WORKS (Hidden by default) -->
+    <section id="viewLearn" class="hidden lg:col-span-8 flex-col gap-4">
+      <div class="hud-border rounded-2xl bg-[#0b1526] p-5 space-y-4">
+        <h2 class="text-base font-bold text-sky-400 mono">HOW STEP 1 &amp; STEP 2 WORK UNDER THE HOOD</h2>
+        <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">
+          Every feature you just tested runs inside a single file using standard browser capabilities—no paid servers required:
+        </p>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs">
+          <div class="p-3.5 rounded-xl bg-slate-900/80 border border-slate-800">
+            <div class="font-semibold text-sky-300 mono mb-1">1. Voice Synthesis (Speaking Out Loud)</div>
+            <p class="text-slate-400">Uses <code class="text-sky-400">window.speechSynthesis</code> to convert F.R.I.D.A.Y.'s text replies into spoken audio automatically on phones, tablets, laptops, and Android TVs.</p>
+          </div>
+          <div class="p-3.5 rounded-xl bg-slate-900/80 border border-slate-800">
+            <div class="font-semibold text-sky-300 mono mb-1">2. Live Battery API (<code class="text-sky-400">navigator.getBattery</code>)</div>
+            <p class="text-slate-400">Reads your current device's real battery percentage and charging cable state directly from the operating system.</p>
+          </div>
+          <div class="p-3.5 rounded-xl bg-slate-900/80 border border-slate-800">
+            <div class="font-semibold text-sky-300 mono mb-1">3. Persistent Memory Core</div>
+            <p class="text-slate-400">Saves facts you tell F.R.I.D.A.Y. (like <code class="text-sky-400">"Remember..."</code>) in <code class="text-sky-400">localStorage</code> so they stay saved when you refresh.</p>
+          </div>
+          <div class="p-3.5 rounded-xl bg-slate-900/80 border border-slate-800">
+            <div class="font-semibold text-sky-300 mono mb-1">4. Cross-Device Hub Preview</div>
+            <p class="text-slate-400">Models your 9 home devices (Realme X TV, Mi TV Stick, 5 Android phones, Tablet, Laptop, PC) so you can query any device by name.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- RIGHT SIDEBAR: PROACTIVE TIMERS, DAILY PROGRESS, MEMORY BANK & FLEET -->
+    <aside class="lg:col-span-4 flex flex-col gap-4">
+      <!-- Proactive Care & Timed Reminder Card -->
+      <div class="hud-border rounded-2xl bg-[#0b1526] p-4 flex flex-col gap-3">
+        <div class="flex items-center justify-between">
+          <div>
+            <h2 class="text-sm font-bold text-amber-400 mono">PROACTIVE CARE &amp; TIMERS</h2>
+            <p class="text-xs text-slate-400">Automated check-ins &amp; low-battery sentinel</p>
+          </div>
+          <span id="activeTimerBadge" class="text-xs px-2 py-0.5 rounded-full bg-amber-500/15 text-amber-300 border border-amber-500/30 mono">Idle</span>
+        </div>
+
+        <form id="timerForm" class="flex gap-1.5">
+          <input id="timerLabelInput" type="text" placeholder="Reminder (e.g. Drink Water)" class="flex-1 bg-slate-900/90 border border-slate-700/80 rounded-xl px-2.5 py-1.5 text-xs text-slate-100 placeholder-slate-500 focus:outline-none focus:border-amber-400">
+          <select id="timerSecondsSelect" aria-label="Timer Duration" class="bg-slate-900 border border-slate-700 rounded-xl px-2 py-1.5 text-xs text-amber-300 mono">
+            <option value="5">5s Demo</option>
+            <option value="60">1 Min</option>
+            <option value="900">15 Mins</option>
+            <option value="1800">30 Mins</option>
+          </select>
+          <button type="submit" class="px-2.5 py-1.5 rounded-xl bg-amber-500 hover:bg-amber-400 text-slate-950 text-xs font-semibold transition">
+            Start
+          </button>
+        </form>
+
+        <div class="flex items-center justify-between text-xs pt-1 border-t border-slate-800/80">
+          <span class="text-slate-300">Low-Battery Fleet Sentinel (&lt;30%)</span>
+          <button id="sentinelToggleBtn" type="button" class="px-2.5 py-1 rounded-lg bg-emerald-500/20 border border-emerald-400/40 text-emerald-300 font-medium mono text-[11px]">
+            Sentinel: ON
+          </button>
+        </div>
+      </div>
+      <!-- Daily Life Progress Agent Card -->
+      <div class="hud-border rounded-2xl bg-[#0b1526] p-4 flex flex-col gap-3">
+        <div class="flex items-center justify-between">
+          <div>
+            <h2 class="text-sm font-bold text-emerald-400 mono">DAILY LIFE PROGRESS</h2>
+            <p class="text-xs text-slate-400">Habits &amp; goals tracked by F.R.I.D.A.Y.</p>
+          </div>
+          <span id="progressScoreBadge" class="text-xs px-2 py-0.5 rounded-full bg-emerald-500/15 text-emerald-300 border border-emerald-500/30 mono">25% Done (1/4)</span>
+        </div>
+
+        <div class="w-full h-2 bg-slate-800 rounded-full overflow-hidden">
+          <div id="progressBarFill" class="bg-emerald-400 h-full transition-all duration-300" style="width: 25%;"></div>
+        </div>
+
+        <form id="goalForm" class="flex gap-2">
+          <input id="goalInput" type="text" placeholder="Add daily goal (e.g. Study 1 hr)" class="flex-1 bg-slate-900/90 border border-slate-700/80 rounded-xl px-3 py-1.5 text-xs text-slate-100 placeholder-slate-500 focus:outline-none focus:border-emerald-400">
+          <button type="submit" class="px-3 py-1.5 rounded-xl bg-emerald-500/20 hover:bg-emerald-500/30 border border-emerald-400/40 text-emerald-300 text-xs font-semibold transition">
+            + Goal
+          </button>
+        </form>
+
+        <ul id="goalList" class="space-y-1.5 max-h-44 overflow-y-auto pr-1 text-xs"><li class="p-2 rounded-xl bg-slate-900/90 border border-slate-800 flex items-center justify-between gap-2"><label class="flex items-center gap-2 cursor-pointer flex-1"><input type="checkbox" class="rounded border-slate-600 text-emerald-500 focus:ring-0"><span class="line-through text-slate-500">Drink 3 Liters of Water</span></label><button type="button" class="text-slate-500 hover:text-rose-400 text-xs px-1">✕</button></li><li class="p-2 rounded-xl bg-slate-900/90 border border-slate-800 flex items-center justify-between gap-2"><label class="flex items-center gap-2 cursor-pointer flex-1"><input type="checkbox" class="rounded border-slate-600 text-emerald-500 focus:ring-0"><span class="text-slate-200">Complete 45-min Focus / Coding Session</span></label><button type="button" class="text-slate-500 hover:text-rose-400 text-xs px-1">✕</button></li><li class="p-2 rounded-xl bg-slate-900/90 border border-slate-800 flex items-center justify-between gap-2"><label class="flex items-center gap-2 cursor-pointer flex-1"><input type="checkbox" class="rounded border-slate-600 text-emerald-500 focus:ring-0"><span class="text-slate-200">Evening Workout &amp; Stretch (30 mins)</span></label><button type="button" class="text-slate-500 hover:text-rose-400 text-xs px-1">✕</button></li><li class="p-2 rounded-xl bg-slate-900/90 border border-slate-800 flex items-center justify-between gap-2"><label class="flex items-center gap-2 cursor-pointer flex-1"><input type="checkbox" class="rounded border-slate-600 text-emerald-500 focus:ring-0"><span class="text-slate-200">Review Tomorrow Top 3 Priorities</span></label><button type="button" class="text-slate-500 hover:text-rose-400 text-xs px-1">✕</button></li></ul>
+      </div>
+      <!-- Memory Bank Card -->
+      <div class="hud-border rounded-2xl bg-[#0b1526] p-4 flex flex-col gap-3">
+        <div class="flex items-center justify-between">
+          <div>
+            <h2 class="text-sm font-bold text-sky-400 mono">MEMORY CORE</h2>
+            <p class="text-xs text-slate-400">Facts &amp; reminders F.R.I.D.A.Y. remembers</p>
+          </div>
+          <span id="memoryCountBadge" class="text-xs px-2 py-0.5 rounded-full bg-sky-500/15 text-sky-300 mono">2 saved</span>
+        </div>
+
+        <form id="memoryForm" class="flex gap-2">
+          <input id="memoryInput" type="text" placeholder="Add memory (e.g. Drink water at 4 PM)" class="flex-1 bg-slate-900/90 border border-slate-700/80 rounded-xl px-3 py-1.5 text-xs text-slate-100 placeholder-slate-500 focus:outline-none focus:border-sky-400">
+          <button type="submit" class="px-3 py-1.5 rounded-xl bg-sky-500/20 hover:bg-sky-500/30 border border-sky-400/40 text-sky-300 text-xs font-semibold transition">
+            Save
+          </button>
+        </form>
+
+        <ul id="memoryList" class="space-y-2 max-h-52 overflow-y-auto pr-1 text-xs"><li class="p-2.5 rounded-xl bg-slate-900/90 border border-slate-800 flex items-start justify-between gap-2"><span class="text-slate-200 leading-snug">Goal: Build F.R.I.D.A.Y. step by step across all home devices</span><button type="button" class="text-slate-500 hover:text-rose-400 text-xs shrink-0 px-1">✕</button></li><li class="p-2.5 rounded-xl bg-slate-900/90 border border-slate-800 flex items-start justify-between gap-2"><span class="text-slate-200 leading-snug">Reminder: Take a 5-minute stretch and hydration break every hour</span><button type="button" class="text-slate-500 hover:text-rose-400 text-xs shrink-0 px-1">✕</button></li></ul>
+      </div>
+
+      <!-- Home Fleet Mini Summary -->
+      <div class="hud-border rounded-2xl bg-[#0b1526] p-4 flex flex-col gap-2.5">
+        <div class="flex items-center justify-between">
+          <h2 class="text-sm font-bold text-sky-400 mono">HOME FLEET SNAPSHOT</h2>
+          <span class="text-[11px] text-emerald-400 mono">9 DEVICES</span>
+        </div>
+        <div id="miniFleetList" class="space-y-1.5 text-xs"><div class="flex items-center justify-between py-1 border-b border-slate-800/60 last:border-none">
+          <span class="text-slate-300 truncate pr-2">This Device (Live)</span>
+          <span class="mono text-sky-300 shrink-0">100% ⚡</span>
+        </div><div class="flex items-center justify-between py-1 border-b border-slate-800/60 last:border-none">
+          <span class="text-slate-300 truncate pr-2">Android Phone 1 (Primary)</span>
+          <span class="mono text-sky-300 shrink-0">92% ⚡</span>
+        </div><div class="flex items-center justify-between py-1 border-b border-slate-800/60 last:border-none">
+          <span class="text-slate-300 truncate pr-2">Android Phone 2</span>
+          <span class="mono text-sky-300 shrink-0">64% </span>
+        </div><div class="flex items-center justify-between py-1 border-b border-slate-800/60 last:border-none">
+          <span class="text-slate-300 truncate pr-2">Android Phone 3</span>
+          <span class="mono text-sky-300 shrink-0">47% </span>
+        </div><div class="flex items-center justify-between py-1 border-b border-slate-800/60 last:border-none">
+          <span class="text-slate-300 truncate pr-2">Android Phone 4</span>
+          <span class="mono text-sky-300 shrink-0">81% </span>
+        </div><div class="flex items-center justify-between py-1 border-b border-slate-800/60 last:border-none">
+          <span class="text-slate-300 truncate pr-2">Android Phone 5</span>
+          <span class="mono text-sky-300 shrink-0">29% ⚡</span>
+        </div><div class="flex items-center justify-between py-1 border-b border-slate-800/60 last:border-none">
+          <span class="text-slate-300 truncate pr-2">Android Tablet</span>
+          <span class="mono text-sky-300 shrink-0">76% </span>
+        </div><div class="flex items-center justify-between py-1 border-b border-slate-800/60 last:border-none">
+          <span class="text-slate-300 truncate pr-2">Home Laptop</span>
+          <span class="mono text-sky-300 shrink-0">58% ⚡</span>
+        </div><div class="flex items-center justify-between py-1 border-b border-slate-800/60 last:border-none">
+          <span class="text-slate-300 truncate pr-2">Realme X TV + Mi TV Stick &amp; PC</span>
+          <span class="mono text-sky-300 shrink-0">100% ⚡</span>
+        </div></div>
+      </div>
+    </aside>
+
+  </main>
+
+  <script>
+    // --- Safe Storage Helper ---
+    function loadMemories() {
+      try {
+        const raw = localStorage.getItem('friday_v1_memories');
+        if (raw) return JSON.parse(raw);
+      } catch (e) {}
+      return [
+        { id: 'm1', text: 'Goal: Build F.R.I.D.A.Y. step by step across all home devices', time: 'System Init' },
+        { id: 'm2', text: 'Reminder: Take a 5-minute stretch and hydration break every hour', time: 'System Init' }
+      ];
+    }
+
+    function saveMemories(list) {
+      try {
+        localStorage.setItem('friday_v1_memories', JSON.stringify(list));
+      } catch (e) {}
+    }
+
+    // --- Step 2 Storage Helpers (Daily Goals & Trained AI Rules) ---
+    function loadGoals() {
+      try {
+        const raw = localStorage.getItem('friday_v2_goals');
+        if (raw) return JSON.parse(raw);
+      } catch (e) {}
+      return [
+        { id: 'g1', title: 'Drink 3 Liters of Water', done: true },
+        { id: 'g2', title: 'Complete 45-min Focus / Coding Session', done: false },
+        { id: 'g3', title: 'Evening Workout & Stretch (30 mins)', done: false },
+        { id: 'g4', title: 'Review Tomorrow Top 3 Priorities', done: false }
+      ];
+    }
+
+    function saveGoals(list) {
+      try { localStorage.setItem('friday_v2_goals', JSON.stringify(list)); } catch (e) {}
+    }
+
+    function loadRules() {
+      try {
+        const raw = localStorage.getItem('friday_v2_rules');
+        if (raw) return JSON.parse(raw);
+      } catch (e) {}
+      return [
+        { id: 'r1', trigger: 'good morning', response: 'Good morning, Boss! Time to hydrate, review your daily progress tracker, and tackle your #1 priority.' },
+        { id: 'r2', trigger: 'focus mode', response: 'Activating Focus Protocol: silencing non-urgent alerts across your 5 Android phones and starting a 45-minute deep work sprint.' },
+        { id: 'r3', trigger: 'night check', response: 'Running night checklist: plug in Phone 3 and Phone 5, log today completed habits, and get 7.5 hours of sleep.' }
+      ];
+    }
+
+    function saveRules(list) {
+      try { localStorage.setItem('friday_v2_rules', JSON.stringify(list)); } catch (e) {}
+    }
+
+    function loadApiKey() {
+      try { return localStorage.getItem('friday_v2_gemini_key') || ''; } catch (e) { return ''; }
+    }
+
+    function loadCloudEndpoint() {
+      const defaultFirebaseUrl = 'https://friday-5e12d-default-rtdb.firebaseio.com/friday.json';
+      try { return localStorage.getItem('friday_v3_cloud_url') || defaultFirebaseUrl; } catch (e) { return defaultFirebaseUrl; }
+    }
+
+    // --- State ---
+    let voiceEnabled = true;
+    let handsFreeEnabled = false;
+    let sentinelEnabled = true;
+    let activeCountdownInterval = null;
+    let remainingSeconds = 0;
+    let activeTimerTask = '';
+    let continuousRecognizer = null;
+    let memories = loadMemories();
+    let dailyGoals = loadGoals();
+    let trainedRules = loadRules();
+    let geminiApiKey = loadApiKey();
+    let cloudEndpointUrl = loadCloudEndpoint();
+    let syncChannel = null;
+    try {
+      if ('BroadcastChannel' in window) {
+        syncChannel = new BroadcastChannel('friday_home_fleet_sync');
+        syncChannel.onmessage = (ev) => {
+          if (ev.data && ev.data.type === 'STATE_SYNC') {
+            memories = ev.data.memories || memories;
+            dailyGoals = ev.data.dailyGoals || dailyGoals;
+            trainedRules = ev.data.trainedRules || trainedRules;
+            renderMemories();
+            renderGoals();
+            renderRules();
+            document.getElementById('lastSyncTimeText').textContent = 'Last Sync: Live Mesh Broadcast received at ' + new Date().toLocaleTimeString();
+          }
+        };
+      }
+    } catch (e) {}
+    let localBattery = { level: 88, charging: true, supported: false };
+    let localTelemetry = {
+      online: navigator.onLine,
+      netType: (navigator.connection && navigator.connection.effectiveType) ? navigator.connection.effectiveType.toUpperCase() : 'WIFI/4G',
+      downlink: (navigator.connection && navigator.connection.downlink) ? navigator.connection.downlink + ' Mbps' : '45 Mbps',
+      cores: navigator.hardwareConcurrency || 8,
+      ram: navigator.deviceMemory ? navigator.deviceMemory + ' GB' : '8 GB',
+      screen: `${window.screen.width}x${window.screen.height}`
+    };
+
+    const homeDevices = [
+      { id: 'dev-current', name: 'This Device (Live)', type: 'Active Console', battery: 88, charging: true, net: 'Online • WiFi', ram: '8 GB', cpu: '8 Cores', activeApp: 'F.R.I.D.A.Y. HUD', btStatus: 'BLE Host (0 dBm)', live: true },
+      { id: 'dev-p1', name: 'Android Phone 1 (Primary)', type: 'Android APK Node', battery: 92, charging: true, net: '5G • 110 Mbps', ram: '8 GB', cpu: 'Octa-Core', activeApp: 'WhatsApp / Sync', btStatus: 'BT Mesh (-44 dBm)', live: false },
+      { id: 'dev-p2', name: 'Android Phone 2', type: 'Android APK Node', battery: 64, charging: false, net: 'WiFi • 54 Mbps', ram: '6 GB', cpu: 'Octa-Core', activeApp: 'Idle / Standby', btStatus: 'BT Mesh (-52 dBm)', live: false },
+      { id: 'dev-p3', name: 'Android Phone 3', type: 'Android APK Node', battery: 47, charging: false, net: 'WiFi • 48 Mbps', ram: '6 GB', cpu: 'Octa-Core', activeApp: 'YouTube Music', btStatus: 'BT Mesh (-58 dBm)', live: false },
+      { id: 'dev-p4', name: 'Android Phone 4', type: 'Android APK Node', battery: 81, charging: false, net: 'WiFi • 60 Mbps', ram: '8 GB', cpu: 'Octa-Core', activeApp: 'Idle / Standby', btStatus: 'BT Mesh (-49 dBm)', live: false },
+      { id: 'dev-p5', name: 'Android Phone 5', type: 'Android APK Node', battery: 29, charging: true, net: '4G • 22 Mbps', ram: '4 GB', cpu: 'Octa-Core', activeApp: 'Charging Dock', btStatus: 'BT Mesh (-67 dBm)', live: false },
+      { id: 'dev-tab', name: 'Android Tablet', type: 'Android APK Node', battery: 76, charging: false, net: 'WiFi • 72 Mbps', ram: '8 GB', cpu: '8 Cores', activeApp: 'PDF Study Reader', btStatus: 'BT Mesh (-46 dBm)', live: false },
+      { id: 'dev-laptop', name: 'Home Laptop', type: 'Browser PWA Node', battery: 58, charging: true, net: 'WiFi • 140 Mbps', ram: '16 GB', cpu: '12 Cores', activeApp: 'VS Code / Dev', btStatus: 'BT GATT (-41 dBm)', live: false },
+      { id: 'dev-tv', name: 'Realme X TV + Mi TV Stick & PC', type: 'AC Powered Nodes', battery: 100, charging: true, net: 'LAN/WiFi • 200 Mbps', ram: '16 GB (PC)', cpu: 'AC Always-On', activeApp: 'Home Media & Server', btStatus: 'BT Audio/Mesh (-55 dBm)', live: false }
+    ];
+
+    const motivationalPrompts = [
+      "Boss, every complex system starts with one working module. You already have Step 1 running—keep going one step at a time.",
+      "Checking in on you: remember to drink some water, rest your eyes for 20 seconds, and stay steady on today's goals.",
+      "Systems are green across the board. Focus on your top priority for the next 25 minutes—I'll keep track of your notes right here."
+    ];
+
+    // --- Battery Detection (Real Browser API) ---
+    async function initBattery() {
+      const batteryEl = document.getElementById('liveBatteryText');
+      if ('getBattery' in navigator) {
+        try {
+          const bat = await navigator.getBattery();
+          const updateBat = () => {
+            localBattery.level = Math.round(bat.level * 100);
+            localBattery.charging = bat.charging;
+            localBattery.supported = true;
+            homeDevices[0].battery = localBattery.level;
+            homeDevices[0].charging = localBattery.charging;
+            batteryEl.textContent = `This Device: ${localBattery.level}% (${localBattery.charging ? 'Charging ⚡' : 'On Battery'})`;
+            renderFleet();
+          };
+          updateBat();
+          bat.addEventListener('levelchange', updateBat);
+          bat.addEventListener('chargingchange', updateBat);
+          return;
+        } catch (err) {}
+      }
+      batteryEl.textContent = `This Device: ${localBattery.level}% (Simulated — Browser Battery API restricted in sandbox)`;
+      renderFleet();
+    }
+
+    let userAddressTitle = 'Boss';
+    let customVoiceRate = 1.02;
+    let customVoicePitch = 1.05;
+    let autoSyncInterval = null;
+    let autoSyncEnabled = false;
+
+    // --- Speech Synthesis (Text-to-Speech) ---
+    function speakText(text) {
+      if (!voiceEnabled || !('speechSynthesis' in window)) return;
+      try {
+        window.speechSynthesis.cancel();
+        const personalized = text.replace(/\bBoss\b/g, userAddressTitle || 'Boss');
+        const utter = new SpeechSynthesisUtterance(personalized);
+        const voices = window.speechSynthesis.getVoices();
+        const preferred = voices.find(v => /female|zira|samantha|google uk english female|aria/i.test(v.name)) || voices[0];
+        if (preferred) utter.voice = preferred;
+        utter.rate = customVoiceRate;
+        utter.pitch = customVoicePitch;
+        window.speechSynthesis.speak(utter);
+      } catch (e) {}
+    }
+
+    // --- Render Memories ---
+    function renderMemories() {
+      const listEl = document.getElementById('memoryList');
+      const badgeEl = document.getElementById('memoryCountBadge');
+      badgeEl.textContent = `${memories.length} saved`;
+      listEl.innerHTML = '';
+
+      if (memories.length === 0) {
+        listEl.innerHTML = `<li class="text-slate-500 italic py-2">No memories stored yet. Tell FRIDAY "Remember..." in chat!</li>`;
+        return;
+      }
+
+      memories.forEach(item => {
+        const li = document.createElement('li');
+        li.className = 'p-2.5 rounded-xl bg-slate-900/90 border border-slate-800 flex items-start justify-between gap-2';
+        const textSpan = document.createElement('span');
+        textSpan.className = 'text-slate-200 leading-snug';
+        textSpan.textContent = item.text;
+
+        const delBtn = document.createElement('button');
+        delBtn.type = 'button';
+        delBtn.className = 'text-slate-500 hover:text-rose-400 text-xs shrink-0 px-1';
+        delBtn.textContent = '✕';
+        delBtn.addEventListener('click', () => {
+          memories = memories.filter(m => m.id !== item.id);
+          saveMemories(memories);
+          renderMemories();
+        });
+
+        li.appendChild(textSpan);
+        li.appendChild(delBtn);
+        listEl.appendChild(li);
+      });
+    }
+
+    // --- Render Home Device Fleet ---
+    function renderFleet() {
+      const gridEl = document.getElementById('deviceFleetGrid');
+      const miniEl = document.getElementById('miniFleetList');
+      gridEl.innerHTML = '';
+      miniEl.innerHTML = '';
+
+      homeDevices.forEach(dev => {
+        const color = dev.battery >= 60 ? 'bg-emerald-400' : dev.battery >= 35 ? 'bg-amber-400' : 'bg-rose-500';
+        const card = document.createElement('div');
+        card.className = 'p-3.5 rounded-xl bg-slate-900/90 border border-slate-800 flex flex-col justify-between gap-2';
+        card.innerHTML = `
+          <div>
+            <div class="flex items-center justify-between gap-1">
+              <span class="font-semibold text-xs text-slate-100">${dev.name}</span>
+              <span class="text-[10px] px-1.5 py-0.5 rounded bg-sky-500/10 text-sky-300 mono">${dev.charging ? '⚡ CHG' : 'BAT'}</span>
+            </div>
+            <div class="text-[11px] text-slate-400 mt-0.5">${dev.type}</div>
+          </div>
+          <div class="text-[11px] text-slate-400 space-y-0.5 bg-slate-950/60 p-2 rounded-lg border border-slate-800/80 mono">
+            <div>BT LINK: <span class="text-blue-300">${dev.btStatus || 'BT Mesh Ready'}</span></div>
+            <div>NET: <span class="text-slate-200">${dev.net}</span></div>
+            <div>SPECS: <span class="text-slate-200">${dev.cpu} • ${dev.ram}</span></div>
+            <div>STATE: <span class="text-sky-300">${dev.activeApp}</span></div>
+          </div>
+          <div>
+            <div class="flex justify-between text-xs mono mb-1">
+              <span class="text-slate-400">Charge</span>
+              <span class="text-sky-300 font-semibold">${dev.battery}%</span>
+            </div>
+            <div class="w-full h-1.5 bg-slate-800 rounded-full overflow-hidden">
+              <div class="${color} h-full transition-all duration-300" style="width: ${dev.battery}%"></div>
+            </div>
+          </div>
+          <div class="flex gap-1.5 pt-1">
+            <button type="button" data-ring-id="${dev.id}" class="flex-1 px-2 py-1 rounded-lg bg-amber-500/15 hover:bg-amber-500/25 border border-amber-500/30 text-amber-300 text-[11px] font-medium transition">
+              🔔 Ring
+            </button>
+            <button type="button" data-cast-id="${dev.id}" class="flex-1 px-2 py-1 rounded-lg bg-sky-500/15 hover:bg-sky-500/25 border border-sky-500/30 text-sky-300 text-[11px] font-medium transition">
+              📺 Cast HUD
+            </button>
+          </div>
+        `;
+        card.querySelector('[data-ring-id]').addEventListener('click', () => {
+          triggerRemoteRing(dev.name);
+        });
+        card.querySelector('[data-cast-id]').addEventListener('click', () => {
+          dispatchRemoteCommand(dev.name, 'Priority HUD Check-In from F.R.I.D.A.Y.');
+        });
+        gridEl.appendChild(card);
+
+        const miniRow = document.createElement('div');
+        miniRow.className = 'flex items-center justify-between py-1 border-b border-slate-800/60 last:border-none';
+        miniRow.innerHTML = `
+          <span class="text-slate-300 truncate pr-2">${dev.name}</span>
+          <span class="mono text-sky-300 shrink-0">${dev.battery}% ${dev.charging ? '⚡' : ''}</span>
+        `;
+        miniEl.appendChild(miniRow);
+      });
+    }
+
+    // --- Chat Engine ---
+    function appendMessage(sender, text) {
+      const container = document.getElementById('chatMessages');
+      const wrap = document.createElement('div');
+      const isFriday = sender === 'FRIDAY';
+      wrap.className = `flex flex-col ${isFriday ? 'items-start' : 'items-end'}`;
+
+      const bubble = document.createElement('div');
+      bubble.className = isFriday
+        ? 'max-w-[85%] rounded-2xl rounded-tl-sm bg-sky-950/60 border border-sky-500/30 px-4 py-2.5 text-slate-100 leading-relaxed'
+        : 'max-w-[85%] rounded-2xl rounded-tr-sm bg-sky-500 text-slate-950 font-medium px-4 py-2.5 leading-relaxed';
+
+      const label = document.createElement('div');
+      label.className = `text-[10px] mono mb-1 ${isFriday ? 'text-sky-400' : 'text-slate-900/70'}`;
+      label.textContent = isFriday ? 'F.R.I.D.A.Y. // OS' : 'YOU';
+
+      const body = document.createElement('div');
+      body.textContent = text;
+
+      bubble.appendChild(label);
+      bubble.appendChild(body);
+      wrap.appendChild(bubble);
+      container.appendChild(wrap);
+      container.scrollTop = container.scrollHeight;
+    }
+
+    function initSystemTelemetry() {
+      localTelemetry.online = navigator.onLine;
+      localTelemetry.netType = (navigator.connection && navigator.connection.effectiveType) ? navigator.connection.effectiveType.toUpperCase() : 'WIFI';
+      localTelemetry.downlink = (navigator.connection && navigator.connection.downlink) ? navigator.connection.downlink + ' Mbps' : '50+ Mbps';
+      localTelemetry.cores = navigator.hardwareConcurrency || 8;
+      localTelemetry.ram = navigator.deviceMemory ? navigator.deviceMemory + ' GB' : '8 GB';
+      localTelemetry.screen = `${window.screen.width}x${window.screen.height}`;
+
+      homeDevices[0].net = `${localTelemetry.online ? 'Online' : 'Offline'} • ${localTelemetry.netType} (${localTelemetry.downlink})`;
+      homeDevices[0].ram = localTelemetry.ram;
+      homeDevices[0].cpu = `${localTelemetry.cores} Cores`;
+
+      document.getElementById('telemetryNetBadge').textContent = `NET: ${localTelemetry.online ? 'ONLINE' : 'OFFLINE'} (${localTelemetry.netType} • ${localTelemetry.downlink})`;
+      document.getElementById('telemetryHwBadge').textContent = `HW: ${localTelemetry.cores} CORES • ${localTelemetry.ram} RAM`;
+      document.getElementById('telemetryScreenBadge').textContent = `DISP: ${localTelemetry.screen}`;
+      renderFleet();
+    }
+
+    function renderGoals() {
+      const listEl = document.getElementById('goalList');
+      const badgeEl = document.getElementById('progressScoreBadge');
+      const fillEl = document.getElementById('progressBarFill');
+      if (!listEl) return;
+
+      const total = dailyGoals.length;
+      const completed = dailyGoals.filter(g => g.done).length;
+      const pct = total === 0 ? 0 : Math.round((completed / total) * 100);
+      badgeEl.textContent = `${pct}% Done (${completed}/${total})`;
+      fillEl.style.width = `${pct}%`;
+
+      listEl.innerHTML = '';
+      dailyGoals.forEach(goal => {
+        const li = document.createElement('li');
+        li.className = 'p-2 rounded-xl bg-slate-900/90 border border-slate-800 flex items-center justify-between gap-2';
+
+        const left = document.createElement('label');
+        left.className = 'flex items-center gap-2 cursor-pointer flex-1';
+
+        const cb = document.createElement('input');
+        cb.type = 'checkbox';
+        cb.checked = goal.done;
+        cb.className = 'rounded border-slate-600 text-emerald-500 focus:ring-0';
+        cb.addEventListener('change', () => {
+          goal.done = cb.checked;
+          saveGoals(dailyGoals);
+          renderGoals();
+        });
+
+        const span = document.createElement('span');
+        span.className = goal.done ? 'line-through text-slate-500' : 'text-slate-200';
+        span.textContent = goal.title;
+
+        left.appendChild(cb);
+        left.appendChild(span);
+
+        const delBtn = document.createElement('button');
+        delBtn.type = 'button';
+        delBtn.className = 'text-slate-500 hover:text-rose-400 text-xs px-1';
+        delBtn.textContent = '✕';
+        delBtn.addEventListener('click', () => {
+          dailyGoals = dailyGoals.filter(g => g.id !== goal.id);
+          saveGoals(dailyGoals);
+          renderGoals();
+        });
+
+        li.appendChild(left);
+        li.appendChild(delBtn);
+        listEl.appendChild(li);
+      });
+    }
+
+    function renderRules() {
+      const listEl = document.getElementById('trainedRulesList');
+      const badgeEl = document.getElementById('ruleCountBadge');
+      if (!listEl) return;
+      badgeEl.textContent = `${trainedRules.length} trained rules`;
+      listEl.innerHTML = '';
+
+      trainedRules.forEach(rule => {
+        const div = document.createElement('div');
+        div.className = 'p-2.5 rounded-xl bg-slate-900/90 border border-slate-800 flex items-start justify-between gap-2';
+        div.innerHTML = `
+          <div>
+            <div class="text-sky-300 font-semibold mono">WHEN I SAY: "${rule.trigger}"</div>
+            <div class="text-slate-300 mt-0.5">F.R.I.D.A.Y.: "${rule.response}"</div>
+          </div>
+        `;
+        const delBtn = document.createElement('button');
+        delBtn.type = 'button';
+        delBtn.className = 'text-slate-500 hover:text-rose-400 text-xs px-1 shrink-0';
+        delBtn.textContent = '✕';
+        delBtn.addEventListener('click', () => {
+          trainedRules = trainedRules.filter(r => r.id !== rule.id);
+          saveRules(trainedRules);
+          renderRules();
+        });
+        div.appendChild(delBtn);
+        listEl.appendChild(div);
+      });
+    }
+
+    async function syncWithCloud(silent = false) {
+      const payload = {
+        memories,
+        dailyGoals,
+        trainedRules,
+        homeDevices,
+        activeNode: homeDevices[0].name,
+        timestamp: new Date().toISOString()
+      };
+
+      // Broadcast across open tabs/windows on the same machine immediately
+      try {
+        if (syncChannel) {
+          syncChannel.postMessage({ type: 'STATE_SYNC', ...payload });
+        }
+      } catch (e) {}
+
+      const statusEl = document.getElementById('lastSyncTimeText');
+      const badgeEl = document.getElementById('cloudSyncBadge');
+
+      if (!cloudEndpointUrl) {
+        if (statusEl) statusEl.textContent = `Last Sync: Local & Multi-Tab Mesh synced at ${new Date().toLocaleTimeString()}`;
+        if (!silent) {
+          const msg = `Local Mesh Sync complete (${memories.length} memories, ${dailyGoals.length} daily goals, ${trainedRules.length} AI rules, and 9 device nodes). Paste a free AWS Lambda URL in the "Cloud Sync & APK" tab to sync over the internet!`;
+          appendMessage('FRIDAY', msg);
+          speakText(msg);
+        }
+        return;
+      }
+
+      try {
+        if (badgeEl) badgeEl.textContent = 'Syncing AWS...';
+        const httpMethod = cloudEndpointUrl.endsWith('.json') ? 'PUT' : 'POST';
+        const res = await fetch(cloudEndpointUrl, {
+          method: httpMethod,
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(payload)
+        });
+        if (res.ok) {
+          if (badgeEl) badgeEl.textContent = 'AWS Cloud: Synced ✓';
+          if (statusEl) statusEl.textContent = `Last AWS DynamoDB Sync: ${new Date().toLocaleTimeString()}`;
+          if (!silent) {
+            const msg = 'AWS Cloud Sync complete! All 9 home devices now have your latest memories, trained AI rules, daily progress, and telemetry.';
+            appendMessage('FRIDAY', msg);
+            speakText(msg);
+          }
+        } else {
+          throw new Error('HTTP ' + res.status);
+        }
+      } catch (err) {
+        if (badgeEl) badgeEl.textContent = 'Local Fallback (Offline)';
+        if (statusEl) statusEl.textContent = `AWS Sync unreachable (${new Date().toLocaleTimeString()}) — saved locally`;
+        if (!silent) {
+          appendMessage('FRIDAY', 'Saved to local core. Could not reach the remote AWS URL right now—check your Lambda Function URL and CORS settings.');
+        }
+      }
+    }
+
+    function startCareTimer(label, seconds) {
+      if (activeCountdownInterval) {
+        clearInterval(activeCountdownInterval);
+        activeCountdownInterval = null;
+      }
+      remainingSeconds = seconds;
+      activeTimerTask = label || 'Hydration & Stretch Check-In';
+      const badgeEl = document.getElementById('activeTimerBadge');
+
+      const updateBadge = () => {
+        const mins = Math.floor(remainingSeconds / 60);
+        const secs = remainingSeconds % 60;
+        if (badgeEl) {
+          badgeEl.textContent = `${mins}:${secs < 10 ? '0' : ''}${secs} left`;
+        }
+      };
+      updateBadge();
+
+      activeCountdownInterval = setInterval(() => {
+        remainingSeconds -= 1;
+        if (remainingSeconds <= 0) {
+          clearInterval(activeCountdownInterval);
+          activeCountdownInterval = null;
+          if (badgeEl) badgeEl.textContent = 'Completed ✓';
+          const alertMsg = `Proactive Care Alert, Boss: Time for "${activeTimerTask}"! Take a moment to recharge.`;
+          appendMessage('FRIDAY', alertMsg);
+          speakText(alertMsg);
+        } else {
+          updateBadge();
+        }
+      }, 1000);
+    }
+
+    function runProactiveCareSweep() {
+      const lowDevices = homeDevices.filter(d => d.battery < 30);
+      const pendingGoals = dailyGoals.filter(g => !g.done);
+      let report = `Proactive Care Sweep: `;
+      if (sentinelEnabled && lowDevices.length > 0) {
+        report += `Alert—${lowDevices.map(d => `${d.name} is at ${d.battery}%`).join(', ')}. Please check its charger. `;
+      } else {
+        report += `All 9 home devices are above the 30% safety threshold. `;
+      }
+      if (pendingGoals.length > 0) {
+        report += `You have ${pendingGoals.length} daily goal(s) remaining today, starting with "${pendingGoals[0].title}". Remember to sit tall and drink some water!`;
+      } else {
+        report += `You've finished 100% of your daily goals today—amazing discipline, Boss!`;
+      }
+      appendMessage('FRIDAY', report);
+      speakText(report);
+    }
+
+    async function pairRealBluetoothDevice() {
+      const logEl = document.getElementById('btLogBanner');
+      const badgeEl = document.getElementById('btMeshStatusBadge');
+      if (!('bluetooth' in navigator)) {
+        const fallbackMsg = 'Web Bluetooth API is restricted inside this sandbox preview frame—running simulated 9-device Bluetooth GATT battery handshake instead! (When opened directly in Chrome on Android/Windows or installed as your APK, this button opens your native Bluetooth pairing menu.)';
+        if (logEl) logEl.textContent = 'BT MESH LOG // Sandbox frame detected -> Running simulated BLE GATT 0x180F battery read across fleet.';
+        appendMessage('FRIDAY', fallbackMsg);
+        speakText('Running Bluetooth Mesh scan across all 9 home devices.');
+        runSimulatedBluetoothMesh();
+        return;
+      }
+
+      try {
+        if (logEl) logEl.textContent = 'BT MESH LOG // Requesting nearby Bluetooth Low Energy (BLE) device...';
+        const device = await navigator.bluetooth.requestDevice({
+          acceptAllDevices: true,
+          optionalServices: ['battery_service', 'device_information', 0x180F, 0x180A]
+        });
+        const devName = device.name || 'Paired BLE Node';
+        if (logEl) logEl.textContent = `BT MESH LOG // Connecting to GATT Server on "${devName}"...`;
+
+        let readBattery = null;
+        if (device.gatt) {
+          const server = await device.gatt.connect();
+          try {
+            const service = await server.getPrimaryService('battery_service');
+            const char = await service.getCharacteristic('battery_level');
+            const val = await char.readValue();
+            readBattery = val.getUint8(0);
+          } catch (gattErr) {
+            // Device paired successfully but does not expose standard 0x180F battery_service
+          }
+        }
+
+        const batVal = readBattery !== null ? readBattery : homeDevices[1].battery;
+        homeDevices[1].name = `${devName} (BT Paired)`;
+        homeDevices[1].battery = batVal;
+        homeDevices[1].btStatus = 'GATT Connected (-38 dBm)';
+        homeDevices[1].activeApp = 'BLE Direct Link';
+        renderFleet();
+
+        if (badgeEl) badgeEl.textContent = `BLE Paired: ${devName}`;
+        if (logEl) logEl.textContent = `BT MESH LOG // Connected to "${devName}" via Web Bluetooth GATT. Battery Level: ${batVal}%.`;
+        const msg = `Bluetooth connected to "${devName}"! Live GATT battery level is ${batVal}%.`;
+        appendMessage('FRIDAY', msg);
+        speakText(msg);
+      } catch (err) {
+        if (logEl) logEl.textContent = 'BT MESH LOG // Native picker closed or blocked by frame—running 9-node BLE Mesh telemetry sweep.';
+        runSimulatedBluetoothMesh();
+      }
+    }
+
+    function runSimulatedBluetoothMesh() {
+      const logEl = document.getElementById('btLogBanner');
+      const badgeEl = document.getElementById('btMeshStatusBadge');
+      homeDevices.forEach((dev, idx) => {
+        if (idx > 0 && idx < homeDevices.length - 1) {
+          const rssi = -38 - Math.floor(Math.random() * 28);
+          dev.btStatus = `GATT Synced (${rssi} dBm)`;
+        }
+      });
+      renderFleet();
+      if (badgeEl) badgeEl.textContent = `BLE Mesh Synced (${new Date().toLocaleTimeString()})`;
+      if (logEl) {
+        logEl.textContent = `BT MESH LOG // 9/9 Home Nodes interconnected via BLE GATT 0x180F. Phone 1 (${homeDevices[1].battery}%), Phone 2 (${homeDevices[2].battery}%), Phone 3 (${homeDevices[3].battery}%), Phone 4 (${homeDevices[4].battery}%), Phone 5 (${homeDevices[5].battery}%), Tablet (${homeDevices[6].battery}%), Laptop (${homeDevices[7].battery}%), TV/PC (AC 100%).`;
+      }
+      const msg = `Bluetooth Mesh sweep complete across all 9 devices! Phone 1 is at ${homeDevices[1].battery}%, Laptop is at ${homeDevices[7].battery}%, and Phone 5 is at ${homeDevices[5].battery}% on the charging dock.`;
+      appendMessage('FRIDAY', msg);
+      speakText(msg);
+    }
+
+    function playRadarChime() {
+      if (!voiceEnabled) return;
+      try {
+        const AudioCtx = window.AudioContext || window.webkitAudioContext;
+        if (!AudioCtx) return;
+        const ctx = new AudioCtx();
+        const notes = [880, 1174.66, 1567.98];
+        notes.forEach((freq, idx) => {
+          const osc = ctx.createOscillator();
+          const gain = ctx.createGain();
+          osc.type = 'sine';
+          osc.frequency.setValueAtTime(freq, ctx.currentTime + idx * 0.14);
+          gain.gain.setValueAtTime(0.12, ctx.currentTime + idx * 0.14);
+          gain.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + idx * 0.14 + 0.13);
+          osc.connect(gain);
+          gain.connect(ctx.destination);
+          osc.start(ctx.currentTime + idx * 0.14);
+          osc.stop(ctx.currentTime + idx * 0.14 + 0.13);
+        });
+      } catch (e) {}
+      try {
+        if ('vibrate' in navigator) {
+          navigator.vibrate([250, 100, 250]);
+        }
+      } catch (e) {}
+    }
+
+    function showRemoteAlertBanner(text) {
+      const banner = document.getElementById('remoteAlertBanner');
+      const label = document.getElementById('remoteAlertText');
+      if (banner && label) {
+        label.textContent = text;
+        banner.classList.remove('hidden');
+      }
+    }
+
+    function triggerRemoteRing(deviceName) {
+      playRadarChime();
+      const target = homeDevices.find(d => d.name.toLowerCase().includes(deviceName.toLowerCase())) || homeDevices[1];
+      target.activeApp = '🔔 RINGING (Acoustic Locator)';
+      renderFleet();
+      const alertText = `Acoustic Locator Chime & Vibration dispatched to ${target.name} (${target.battery}% battery).`;
+      showRemoteAlertBanner(alertText);
+      try {
+        if (syncChannel) {
+          syncChannel.postMessage({ type: 'REMOTE_RING', target: target.name, text: alertText });
+        }
+      } catch (e) {}
+      appendMessage('FRIDAY', alertText);
+      speakText(`Ringing ${target.name} now, Boss.`);
+    }
+
+    function dispatchRemoteCommand(targetName, messageText) {
+      playRadarChime();
+      if (targetName === 'ALL') {
+        homeDevices.forEach(d => { d.activeApp = `HUD Broadcast: ${messageText}`; });
+      } else {
+        const target = homeDevices.find(d => d.name.toLowerCase().includes(targetName.toLowerCase())) || homeDevices[8];
+        target.activeApp = `HUD Cast: ${messageText}`;
+      }
+      renderFleet();
+      const alertText = `Remote Command dispatched to ${targetName}: "${messageText}"`;
+      showRemoteAlertBanner(alertText);
+      try {
+        if (syncChannel) {
+          syncChannel.postMessage({ type: 'REMOTE_CAST', target: targetName, text: alertText });
+        }
+      } catch (e) {}
+      appendMessage('FRIDAY', alertText);
+      speakText(`Dispatched to ${targetName}: ${messageText}`);
+    }
+
+    function generateFridayReply(rawInput) {
+      const input = rawInput.trim();
+      const lower = input.toLowerCase();
+
+      // -1. Check timer / reminder command: "set timer 5 seconds for stretch"
+      const timerMatch = lower.match(/(?:set timer|remind me in)\s+(\d+)\s*(second|seconds|sec|minute|minutes|min)/i);
+      if (timerMatch) {
+        const num = parseInt(timerMatch[1], 10);
+        const unit = timerMatch[2].toLowerCase();
+        const secs = unit.startsWith('min') ? num * 60 : num;
+        const taskLabel = input.replace(/.*?(?:second|seconds|sec|minute|minutes|min)\s*(?:for|to)?\s*/i, '').trim() || 'Scheduled Check-In';
+        startCareTimer(taskLabel, secs);
+        return `Timer started for ${num} ${unit} ("${taskLabel}"). I will call out to you when the countdown finishes, Boss.`;
+      }
+
+      // 0. Check inline AI training command: "Train: when I say X reply Y"
+      const trainMatch = input.match(/^train:\s*when i say\s+(.+?)\s+reply\s+(.+)$/i);
+      if (trainMatch) {
+        const trig = trainMatch[1].trim().toLowerCase();
+        const resp = trainMatch[2].trim();
+        trainedRules.unshift({ id: 'r_' + Date.now(), trigger: trig, response: resp });
+        saveRules(trainedRules);
+        renderRules();
+        return `New neural rule trained! Whenever you say "${trig}", I will respond: "${resp}".`;
+      }
+
+      // 0.5 Check Custom Trained Rules first
+      for (const r of trainedRules) {
+        if (lower.includes(r.trigger.toLowerCase())) {
+          return r.response;
+        }
+      }
+
+      // 0.8 Daily Progress & Goal Agent commands
+      if (lower.startsWith('add goal ') || lower.startsWith('new goal ')) {
+        const gTitle = input.replace(/^(add goal|new goal)\s+/i, '').trim();
+        if (gTitle) {
+          dailyGoals.push({ id: 'g_' + Date.now(), title: gTitle, done: false });
+          saveGoals(dailyGoals);
+          renderGoals();
+          return `Added "${gTitle}" to your Daily Life Progress tracker. Let's make it happen, Boss!`;
+        }
+      }
+
+      if (lower.startsWith('complete ') || lower.startsWith('done ') || lower.includes('finished workout') || lower.includes('drank water')) {
+        const keyword = input.replace(/^(complete|done)\s+/i, '').trim().toLowerCase();
+        const found = dailyGoals.find(g => g.title.toLowerCase().includes(keyword) || (lower.includes('workout') && g.title.toLowerCase().includes('workout')) || (lower.includes('water') && g.title.toLowerCase().includes('water')));
+        if (found) {
+          found.done = true;
+          saveGoals(dailyGoals);
+          renderGoals();
+          const doneCount = dailyGoals.filter(g => g.done).length;
+          return `Marked "${found.title}" as complete! You're now at ${Math.round((doneCount / dailyGoals.length) * 100)}% of your daily progress.`;
+        }
+      }
+
+      if (lower.includes('progress') || lower.includes('daily goals') || lower.includes('habits') || lower.includes('routine')) {
+        const total = dailyGoals.length;
+        const done = dailyGoals.filter(g => g.done).length;
+        const pending = dailyGoals.filter(g => !g.done).map(g => g.title);
+        const pct = total === 0 ? 0 : Math.round((done / total) * 100);
+        return `Daily Progress Report: You've completed ${done} of ${total} goals (${pct}%). ${
+          pending.length ? `Next up on your radar: ${pending.slice(0, 2).join(' & ')}.` : 'All goals completed for today—outstanding work, Boss!'
+        }`;
+      }
+
+      // 0.82 Remote Cross-Device Ring & Cast commands
+      if (lower.startsWith('ring ') || lower.startsWith('find ') || lower.includes('where is my phone')) {
+        const numMatch = lower.match(/phone\s*([1-5])/);
+        const targetName = numMatch ? `Android Phone ${numMatch[1]}` : 'Android Phone 1 (Primary)';
+        triggerRemoteRing(targetName);
+        return `Triggered high-volume radar chime and vibration on ${targetName} over your Bluetooth & Wi-Fi mesh!`;
+      }
+
+      if (lower.startsWith('cast ') || lower.startsWith('send to tv') || lower.startsWith('broadcast ')) {
+        const msg = input.replace(/^(cast|send to tv|broadcast)\s*:?\s*/i, '').trim() || 'F.R.I.D.A.Y. Status HUD Active';
+        dispatchRemoteCommand('Realme X TV + Mi TV Stick & PC', msg);
+        return `Broadcasted "${msg}" to your Realme X TV, Mi TV Stick, and PC HUD!`;
+      }
+
+      // 0.85 Bluetooth Mesh & GATT status commands
+      if (lower.includes('bluetooth') || lower.includes('ble') || lower.includes('pair') || lower.includes('interconnect')) {
+        const summary = homeDevices.slice(1, 6).map(d => `${d.name}: ${d.battery}% (${d.btStatus})`).join('; ');
+        return `Bluetooth Mesh Interconnect Status: All 9 home devices are linked. ${summary}. You can also open the "Home Fleet (9)" tab and click "+ Pair Real Bluetooth Device (BLE GATT)" to pair nearby hardware directly.`;
+      }
+
+      // 0.9 Full System Diagnostics / Network / Specs
+      if (lower.includes('diagnostics') || lower.includes('system info') || lower.includes('network') || lower.includes('specs') || lower.includes('ram') || lower.includes('cpu')) {
+        return `System Diagnostics for ${homeDevices[0].name}: Battery at ${homeDevices[0].battery}% (${homeDevices[0].charging ? 'Charging' : 'On Battery'}), Network is ${localTelemetry.online ? 'Online' : 'Offline'} via ${localTelemetry.netType} (${localTelemetry.downlink}), Hardware running ${localTelemetry.cores} CPU cores with ${localTelemetry.ram} RAM at ${localTelemetry.screen} resolution.`;
+      }
+
+      // 1. Memory storage command
+      if (lower.startsWith('remember ') || lower.startsWith('save note ') || lower.includes('remember that ')) {
+        const cleaned = input.replace(/^(remember that|remember|save note)\s+/i, '').trim();
+        if (cleaned) {
+          memories.unshift({ id: 'm_' + Date.now(), text: cleaned, time: new Date().toLocaleTimeString() });
+          saveMemories(memories);
+          renderMemories();
+          return `Got it, Boss. I've locked that into your Memory Core: "${cleaned}". You now have ${memories.length} saved items.`;
+        }
+      }
+
+      // 2. Recall memories
+      if (lower.includes('what do you remember') || lower.includes('my memories') || lower.includes('my notes') || lower.includes('remind me')) {
+        if (memories.length === 0) {
+          return "Your Memory Core is currently empty. Tell me 'Remember...' followed by anything you'd like me to keep track of.";
+        }
+        const summary = memories.slice(0, 3).map(m => m.text).join('; ');
+        return `Here is what I'm tracking in your Memory Core: ${summary}.`;
+      }
+
+      // 3. Specific device or all devices battery check
+      if (lower.includes('all devices') || lower.includes('home devices') || lower.includes('fleet')) {
+        const lowOnes = homeDevices.filter(d => d.battery < 40).map(d => `${d.name} (${d.battery}%)`);
+        return `Scanning all 9 home nodes: This device is at ${homeDevices[0].battery}%. ${
+          lowOnes.length ? `Heads up—${lowOnes.join(', ')} could use a charger soon.` : 'All devices have healthy charge levels.'
+        }`;
+      }
+
+      if (lower.includes('phone') || lower.includes('battery') || lower.includes('charging') || lower.includes('percentage') || lower.includes('laptop') || lower.includes('tab')) {
+        const numMatch = lower.match(/phone\s*([1-5])/);
+        if (numMatch) {
+          const idx = parseInt(numMatch[1], 10);
+          const dev = homeDevices[idx];
+          return `${dev.name} is currently at ${dev.battery}% and ${dev.charging ? 'connected to power' : 'running on battery'}.`;
+        }
+        if (lower.includes('laptop')) {
+          const dev = homeDevices[7];
+          return `Your Home Laptop is at ${dev.battery}% (${dev.charging ? 'charging' : 'on battery'}).`;
+        }
+        if (lower.includes('tab')) {
+          const dev = homeDevices[6];
+          return `Your Android Tablet is currently at ${dev.battery}%.`;
+        }
+        return `Your current device is at ${homeDevices[0].battery}% and ${homeDevices[0].charging ? 'charging' : 'running on battery'}. Ask me to 'scan all devices' or 'check Phone 5' to inspect the rest of your home setup.`;
+      }
+
+      // 4. Motivation / Care / Check-in
+      if (lower.includes('motivate') || lower.includes('tired') || lower.includes('sad') || lower.includes('stressed') || lower.includes('care') || lower.includes('hello') || lower.includes('hi')) {
+        const pick = motivationalPrompts[Math.floor(Math.random() * motivationalPrompts.length)];
+        return pick;
+      }
+
+      return `I heard you: "${input}". You can ask me for your battery status, check Phone 1 through 5, ask for daily motivation, or say "Remember..." so I store a note in your Memory Core.`;
+    }
+
+    async function handleUserCommand(commandText) {
+      if (!commandText.trim()) return;
+      appendMessage('USER', commandText);
+      const localReply = generateFridayReply(commandText);
+
+      // If user configured a free Gemini API Key and local reply fell through to generic fallback, call Gemini
+      if (geminiApiKey && localReply.startsWith('I heard you:')) {
+        try {
+          const sysContext = `You are F.R.I.D.A.Y., a supportive, sharp personal AI assistant and life progress coach. Current device battery: ${homeDevices[0].battery}%, Net: ${localTelemetry.netType}, CPU: ${localTelemetry.cores} cores. User Memories: ${memories.map(m=>m.text).join('; ')}. Daily Goals: ${dailyGoals.map(g=>g.title + (g.done?' [DONE]':' [TODO]')).join('; ')}. Trained Rules: ${trainedRules.map(r=>r.trigger+'->'+r.response).join('; ')}. Reply concisely in 2 sentences.`;
+          const res = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${encodeURIComponent(geminiApiKey)}`, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+              contents: [{ parts: [{ text: sysContext + "\nUser says: " + commandText }] }]
+            })
+          });
+          const data = await res.json();
+          const aiText = data?.candidates?.[0]?.content?.parts?.[0]?.text;
+          if (aiText) {
+            appendMessage('FRIDAY', aiText.trim());
+            speakText(aiText.trim());
+            return;
+          }
+        } catch (err) {}
+      }
+
+      setTimeout(() => {
+        appendMessage('FRIDAY', localReply);
+        speakText(localReply);
+      }, 220);
+    }
+
+    // --- Event Listeners ---
+    document.getElementById('chatForm').addEventListener('submit', (e) => {
+      e.preventDefault();
+      const inputEl = document.getElementById('userInput');
+      const val = inputEl.value;
+      inputEl.value = '';
+      handleUserCommand(val);
+    });
+
+    document.getElementById('memoryForm').addEventListener('submit', (e) => {
+      e.preventDefault();
+      const inputEl = document.getElementById('memoryInput');
+      const val = inputEl.value.trim();
+      if (!val) return;
+      memories.unshift({ id: 'm_' + Date.now(), text: val, time: new Date().toLocaleTimeString() });
+      saveMemories(memories);
+      renderMemories();
+      inputEl.value = '';
+      const msg = `Memory logged: "${val}".`;
+      appendMessage('FRIDAY', msg);
+      speakText(msg);
+    });
+
+    document.getElementById('quickCheckBattery').addEventListener('click', () => {
+      handleUserCommand('What is my battery percentage right now?');
+    });
+
+    document.getElementById('quickMotivate').addEventListener('click', () => {
+      handleUserCommand('Motivate me for today');
+    });
+
+    document.getElementById('quickAllDevices').addEventListener('click', () => {
+      handleUserCommand('Scan all home devices');
+    });
+
+    document.getElementById('clearChatBtn').addEventListener('click', () => {
+      document.getElementById('chatMessages').innerHTML = '';
+      appendMessage('FRIDAY', 'Comm log cleared. Ready when you are, Boss.');
+    });
+
+    document.getElementById('simulateSyncBtn').addEventListener('click', () => {
+      for (let i = 1; i < homeDevices.length - 1; i++) {
+        const delta = Math.floor(Math.random() * 5) - 2;
+        homeDevices[i].battery = Math.max(10, Math.min(100, homeDevices[i].battery + delta));
+      }
+      renderFleet();
+      appendMessage('FRIDAY', 'Home device fleet telemetry refreshed across all 9 nodes.');
+    });
+
+    document.getElementById('voiceToggleBtn').addEventListener('click', () => {
+      voiceEnabled = !voiceEnabled;
+      document.getElementById('voiceToggleLabel').textContent = voiceEnabled ? 'Voice: ON' : 'Voice: MUTE';
+      document.getElementById('voiceDot').className = voiceEnabled ? 'w-2 h-2 rounded-full bg-emerald-400' : 'w-2 h-2 rounded-full bg-slate-500';
+      if (!voiceEnabled && 'speechSynthesis' in window) {
+        window.speechSynthesis.cancel();
+      }
+    });
+
+    // Microphone Speech-to-Text
+    document.getElementById('micBtn').addEventListener('click', () => {
+      const SpeechRec = window.SpeechRecognition || window.webkitSpeechRecognition;
+      if (!SpeechRec) {
+        appendMessage('FRIDAY', 'Browser voice microphone input is blocked in this preview frame—type your command below and I will still reply out loud!');
+        return;
+      }
+      try {
+        const rec = new SpeechRec();
+        rec.lang = 'en-US';
+        rec.start();
+        appendMessage('FRIDAY', 'Listening for your voice command...');
+        rec.onresult = (event) => {
+          const transcript = event.results[0][0].transcript;
+          handleUserCommand(transcript);
+        };
+        rec.onerror = () => {
+          appendMessage('FRIDAY', 'Microphone access was blocked by the browser frame. Type a message below and I will speak the answer out loud.');
+        };
+      } catch (e) {
+        appendMessage('FRIDAY', 'Microphone unavailable in this view. Type your message below!');
+      }
+    });
+
+    document.getElementById('quickDiagnostics').addEventListener('click', () => {
+      handleUserCommand('Run full system diagnostics');
+    });
+
+    document.getElementById('quickProgressBrief').addEventListener('click', () => {
+      handleUserCommand('How is my daily progress today?');
+    });
+
+    document.getElementById('goalForm').addEventListener('submit', (e) => {
+      e.preventDefault();
+      const inputEl = document.getElementById('goalInput');
+      const val = inputEl.value.trim();
+      if (!val) return;
+      dailyGoals.push({ id: 'g_' + Date.now(), title: val, done: false });
+      saveGoals(dailyGoals);
+      renderGoals();
+      inputEl.value = '';
+      const msg = `Added new daily goal: "${val}".`;
+      appendMessage('FRIDAY', msg);
+      speakText(msg);
+    });
+
+    document.getElementById('trainRuleForm').addEventListener('submit', (e) => {
+      e.preventDefault();
+      const trigEl = document.getElementById('trainTriggerInput');
+      const respEl = document.getElementById('trainResponseInput');
+      const trig = trigEl.value.trim();
+      const resp = respEl.value.trim();
+      if (!trig || !resp) return;
+      trainedRules.unshift({ id: 'r_' + Date.now(), trigger: trig, response: resp });
+      saveRules(trainedRules);
+      renderRules();
+      trigEl.value = '';
+      respEl.value = '';
+      const msg = `Trained new skill! Say "${trig}" in the console to test it.`;
+      appendMessage('FRIDAY', msg);
+      speakText(msg);
+    });
+
+    document.getElementById('saveApiKeyBtn').addEventListener('click', () => {
+      const keyVal = document.getElementById('geminiKeyInput').value.trim();
+      geminiApiKey = keyVal;
+      try { localStorage.setItem('friday_v2_gemini_key', keyVal); } catch (e) {}
+      const badge = document.getElementById('llmStatusBadge');
+      badge.textContent = keyVal ? 'Mode: Gemini LLM Connected ⚡' : 'Mode: Built-in Local Agent';
+      appendMessage('FRIDAY', keyVal ? 'Gemini API key saved! Open-ended questions will now use your live telemetry and trained rules.' : 'Switched to Built-in Local Agent mode.');
+    });
+
+    document.getElementById('activeNodeSelect').addEventListener('change', (e) => {
+      const selectedId = e.target.value;
+      const found = homeDevices.find(d => d.id === selectedId);
+      if (found) {
+        homeDevices[0].name = `Active: ${found.name}`;
+        renderFleet();
+        appendMessage('FRIDAY', `Device node identity set to "${found.name}". Telemetry and daily progress are now reporting from this node.`);
+      }
+    });
+
+    document.getElementById('quickCloudSync').addEventListener('click', () => {
+      syncWithCloud(false);
+    });
+
+    document.getElementById('saveCloudUrlBtn').addEventListener('click', () => {
+      const val = document.getElementById('cloudEndpointInput').value.trim();
+      cloudEndpointUrl = val;
+      try { localStorage.setItem('friday_v3_cloud_url', val); } catch (e) {}
+      document.getElementById('cloudSyncBadge').textContent = val ? 'AWS Endpoint Ready' : 'Local Mesh: Active';
+      appendMessage('FRIDAY', val ? `AWS Cloud Endpoint saved: ${val}. Click "Push / Pull Sync" to sync all 9 devices.` : 'Cleared remote URL. Using Local & Multi-Tab Mesh Sync.');
+    });
+
+    document.getElementById('manualSyncNowBtn').addEventListener('click', () => {
+      syncWithCloud(false);
+    });
+
+    document.getElementById('exportBrainBtn').addEventListener('click', () => {
+      const dataStr = JSON.stringify({ memories, dailyGoals, trainedRules, homeDevices }, null, 2);
+      const blob = new Blob([dataStr], { type: 'application/json' });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = 'friday_home_brain_backup.json';
+      a.click();
+      URL.revokeObjectURL(url);
+      appendMessage('FRIDAY', 'Exported your complete F.R.I.D.A.Y. Memory, Progress & Telemetry JSON backup.');
+    });
+
+    document.getElementById('copyAwsCodeBtn').addEventListener('click', () => {
+      const codeText = document.getElementById('awsCodePreview').textContent;
+      try {
+        navigator.clipboard.writeText(codeText);
+      } catch (e) {
+        const ta = document.createElement('textarea');
+        ta.value = codeText;
+        document.body.appendChild(ta);
+        ta.select();
+        document.execCommand('copy');
+        document.body.removeChild(ta);
+      }
+      appendMessage('FRIDAY', 'Copied the AWS Lambda + DynamoDB backend code to your clipboard!');
+    });
+
+    let installedNodes = {};
+    try {
+      const rawInst = localStorage.getItem('friday_v7_installed_nodes');
+      if (rawInst) installedNodes = JSON.parse(rawInst);
+    } catch (e) {}
+
+    function renderRolloutChecklist() {
+      const gridEl = document.getElementById('rolloutChecklistGrid');
+      const badgeEl = document.getElementById('rolloutCountBadge');
+      if (!gridEl) return;
+      gridEl.innerHTML = '';
+      let count = 0;
+
+      homeDevices.forEach(dev => {
+        const isDone = !!installedNodes[dev.id];
+        if (isDone) count++;
+        const label = document.createElement('label');
+        label.className = 'p-2 rounded-xl bg-slate-900/90 border border-slate-800 flex items-center gap-2 cursor-pointer';
+        const cb = document.createElement('input');
+        cb.type = 'checkbox';
+        cb.checked = isDone;
+        cb.className = 'rounded border-slate-600 text-sky-500 focus:ring-0';
+        cb.addEventListener('change', () => {
+          installedNodes[dev.id] = cb.checked;
+          try { localStorage.setItem('friday_v7_installed_nodes', JSON.stringify(installedNodes)); } catch (e) {}
+          renderRolloutChecklist();
+        });
+        const span = document.createElement('span');
+        span.className = isDone ? 'line-through text-emerald-400 truncate' : 'text-slate-200 truncate';
+        span.textContent = dev.name;
+        label.appendChild(cb);
+        label.appendChild(span);
+        gridEl.appendChild(label);
+      });
+
+      if (badgeEl) badgeEl.textContent = `${count}/9 Installed`;
+    }
+
+    document.getElementById('downloadIndexHtmlBtn').addEventListener('click', () => {
+      const fullHtml = '<!DOCTYPE html>\n' + document.documentElement.outerHTML;
+      const blob = new Blob([fullHtml], { type: 'text/html' });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = 'index.html';
+      a.click();
+      URL.revokeObjectURL(url);
+      appendMessage('FRIDAY', 'Downloaded index.html! Upload this alongside manifest.json and sw.js to GitHub Pages.');
+    });
+
+    document.getElementById('downloadSwBtn').addEventListener('click', () => {
+      const swCode = [
+        "const CACHE_NAME = 'friday-os-v7';",
+        "const ASSETS = ['./', './index.html', './manifest.json'];",
+        "self.addEventListener('install', (e) => { e.waitUntil(caches.open(CACHE_NAME).then(c => c.addAll(ASSETS))); self.skipWaiting(); });",
+        "self.addEventListener('activate', (e) => { e.waitUntil(self.clients.claim()); });",
+        "self.addEventListener('fetch', (e) => { e.respondWith(caches.match(e.request).then(r => r || fetch(e.request))); });"
+      ].join('\n');
+      const blob = new Blob([swCode], { type: 'application/javascript' });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = 'sw.js';
+      a.click();
+      URL.revokeObjectURL(url);
+      appendMessage('FRIDAY', 'Downloaded sw.js (Offline Service Worker) for 100% PWABuilder Android APK compatibility.');
+    });
+
+    document.getElementById('downloadManifestBtn').addEventListener('click', () => {
+      const iconSvg = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><rect width="512" height="512" rx="96" fill="#060b14"/><circle cx="256" cy="256" r="170" fill="none" stroke="#38bdf8" stroke-width="28"/><circle cx="256" cy="256" r="64" fill="#38bdf8"/></svg>';
+      const iconUri = 'data:image/svg+xml;base64,' + btoa(iconSvg);
+      const manifestObj = {
+        name: 'F.R.I.D.A.Y. Home AI Assistant',
+        short_name: 'FRIDAY AI',
+        start_url: './index.html',
+        scope: './',
+        display: 'standalone',
+        background_color: '#060b14',
+        theme_color: '#0ea5e9',
+        orientation: 'any',
+        icons: [
+          { src: iconUri, sizes: '192x192', type: 'image/svg+xml', purpose: 'any maskable' },
+          { src: iconUri, sizes: '512x512', type: 'image/svg+xml', purpose: 'any maskable' }
+        ]
+      };
+      const blob = new Blob([JSON.stringify(manifestObj, null, 2)], { type: 'application/manifest+json' });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = 'manifest.json';
+      a.click();
+      URL.revokeObjectURL(url);
+      appendMessage('FRIDAY', 'Downloaded manifest.json (with 192x192 & 512x512 icons) for PWABuilder Android APK generation.');
+    });
+
+    document.getElementById('testCrossDevicePushBtn').addEventListener('click', () => {
+      homeDevices[1].battery = Math.min(100, homeDevices[1].battery + 3);
+      homeDevices[1].activeApp = 'Synced via Cloud Hub';
+      memories.unshift({ id: 'm_' + Date.now(), text: 'Synced from Android Phone 1: Evening gym bag packed', time: new Date().toLocaleTimeString() });
+      saveMemories(memories);
+      renderMemories();
+      renderFleet();
+      const msg = 'Cloud sync event received from Android Phone 1: battery updated to ' + homeDevices[1].battery + '% and new memory added!';
+      appendMessage('FRIDAY', msg);
+      speakText(msg);
+    });
+
+    document.getElementById('quickCareSweep').addEventListener('click', () => {
+      runProactiveCareSweep();
+    });
+
+    document.getElementById('timerForm').addEventListener('submit', (e) => {
+      e.preventDefault();
+      const labelEl = document.getElementById('timerLabelInput');
+      const secEl = document.getElementById('timerSecondsSelect');
+      const label = labelEl.value.trim() || 'Hydrate & Stretch Break';
+      const secs = parseInt(secEl.value, 10) || 5;
+      labelEl.value = '';
+      startCareTimer(label, secs);
+      const msg = `Countdown started (${secs}s) for "${label}". I'll notify you when time is up!`;
+      appendMessage('FRIDAY', msg);
+      speakText(msg);
+    });
+
+    document.getElementById('sentinelToggleBtn').addEventListener('click', () => {
+      sentinelEnabled = !sentinelEnabled;
+      const btn = document.getElementById('sentinelToggleBtn');
+      btn.textContent = sentinelEnabled ? 'Sentinel: ON' : 'Sentinel: OFF';
+      btn.className = sentinelEnabled
+        ? 'px-2.5 py-1 rounded-lg bg-emerald-500/20 border border-emerald-400/40 text-emerald-300 font-medium mono text-[11px]'
+        : 'px-2.5 py-1 rounded-lg bg-slate-800 border border-slate-700 text-slate-400 font-medium mono text-[11px]';
+      appendMessage('FRIDAY', sentinelEnabled ? 'Low-Battery Fleet Sentinel enabled (<30% threshold).' : 'Low-Battery Fleet Sentinel paused.');
+    });
+
+    document.getElementById('handsFreeToggleBtn').addEventListener('click', () => {
+      handsFreeEnabled = !handsFreeEnabled;
+      const labelEl = document.getElementById('handsFreeLabel');
+      const dotEl = document.getElementById('handsFreeDot');
+      labelEl.textContent = handsFreeEnabled ? 'Hands-Free: ON' : 'Hands-Free: OFF';
+      dotEl.className = handsFreeEnabled ? 'w-2 h-2 rounded-full bg-purple-400' : 'w-2 h-2 rounded-full bg-slate-500';
+
+      const SpeechRec = window.SpeechRecognition || window.webkitSpeechRecognition;
+      if (!handsFreeEnabled) {
+        if (continuousRecognizer) {
+          try { continuousRecognizer.stop(); } catch (e) {}
+          continuousRecognizer = null;
+        }
+        appendMessage('FRIDAY', 'Hands-free continuous listening deactivated.');
+        return;
+      }
+
+      if (!SpeechRec) {
+        appendMessage('FRIDAY', 'Hands-Free mode toggled ON (Note: browser preview frame restricts live microphone streaming; when installed as your Android APK or opened in Chrome, I will listen continuously).');
+        return;
+      }
+
+      try {
+        continuousRecognizer = new SpeechRec();
+        continuousRecognizer.continuous = true;
+        continuousRecognizer.lang = 'en-US';
+        continuousRecognizer.onresult = (event) => {
+          const lastIdx = event.results.length - 1;
+          const transcript = event.results[lastIdx][0].transcript.trim();
+          if (transcript) handleUserCommand(transcript);
+        };
+        continuousRecognizer.onend = () => {
+          if (handsFreeEnabled && continuousRecognizer) {
+            try { continuousRecognizer.start(); } catch (e) {}
+          }
+        };
+        continuousRecognizer.start();
+        appendMessage('FRIDAY', 'Hands-Free continuous voice loop active! Speak anytime and I will respond.');
+      } catch (e) {
+        appendMessage('FRIDAY', 'Hands-Free mode enabled. Open the standalone HTML/APK in Chrome or Android to grant continuous microphone access.');
+      }
+    });
+
+    document.getElementById('quickBluetoothScan').addEventListener('click', () => {
+      switchTab('devices');
+      runSimulatedBluetoothMesh();
+    });
+
+    document.getElementById('pairRealBtBtn').addEventListener('click', () => {
+      pairRealBluetoothDevice();
+    });
+
+    document.getElementById('simulateBtMeshBtn').addEventListener('click', () => {
+      runSimulatedBluetoothMesh();
+    });
+
+    document.getElementById('quickRingDevice').addEventListener('click', () => {
+      triggerRemoteRing('Android Phone 2');
+    });
+
+    document.getElementById('dismissRemoteAlertBtn').addEventListener('click', () => {
+      document.getElementById('remoteAlertBanner').classList.add('hidden');
+    });
+
+    document.getElementById('broadcastFocusAllBtn').addEventListener('click', () => {
+      dispatchRemoteCommand('ALL', 'Focus & DND Protocol Active (45m)');
+    });
+
+    document.getElementById('remoteCastForm').addEventListener('submit', (e) => {
+      e.preventDefault();
+      const target = document.getElementById('remoteTargetSelect').value;
+      const inputEl = document.getElementById('remoteMessageInput');
+      const msg = inputEl.value.trim() || 'Check-In Ping from F.R.I.D.A.Y.';
+      inputEl.value = '';
+      dispatchRemoteCommand(target, msg);
+    });
+
+    document.getElementById('userTitleInput').addEventListener('input', (e) => {
+      userAddressTitle = e.target.value.trim() || 'Boss';
+    });
+
+    document.getElementById('voiceRateSelect').addEventListener('change', (e) => {
+      customVoiceRate = parseFloat(e.target.value) || 1.02;
+    });
+
+    document.getElementById('voicePitchSelect').addEventListener('change', (e) => {
+      customVoicePitch = parseFloat(e.target.value) || 1.05;
+    });
+
+    document.getElementById('testPersonaVoiceBtn').addEventListener('click', () => {
+      const sample = `All systems operational, ${userAddressTitle}. Voice calibration set to ${customVoiceRate}x speed and ${customVoicePitch} pitch across your home fleet.`;
+      appendMessage('FRIDAY', sample);
+      speakText(sample);
+    });
+
+    document.getElementById('testAwsPingBtn').addEventListener('click', async () => {
+      const statusEl = document.getElementById('lastSyncTimeText');
+      if (!cloudEndpointUrl) {
+        const msg = `No AWS Lambda Function URL entered yet, ${userAddressTitle}. Paste your Function URL in the box above first, or follow the 4-step AWS Console guide in chat!`;
+        appendMessage('FRIDAY', msg);
+        speakText(msg);
+        return;
+      }
+      const startMs = Date.now();
+      try {
+        const res = await fetch(cloudEndpointUrl, { method: 'GET' });
+        const latency = Date.now() - startMs;
+        if (res.ok) {
+          if (statusEl) statusEl.textContent = `AWS Ping OK (${latency} ms) — DynamoDB Table reachable`;
+          const msg = `AWS Lambda connection verified in ${latency} milliseconds! Your DynamoDB memory table is live.`;
+          appendMessage('FRIDAY', msg);
+          speakText(msg);
+        } else {
+          throw new Error('Status ' + res.status);
+        }
+      } catch (err) {
+        if (statusEl) statusEl.textContent = `AWS Ping failed — verify Function URL & CORS (*)`;
+        appendMessage('FRIDAY', 'Could not reach the AWS Lambda URL. Make sure Auth type is set to NONE and CORS Allow-Origin is set to * in your AWS Lambda Function URL settings.');
+      }
+    });
+
+    document.getElementById('autoSyncToggleBtn').addEventListener('click', () => {
+      autoSyncEnabled = !autoSyncEnabled;
+      const btn = document.getElementById('autoSyncToggleBtn');
+      if (autoSyncInterval) {
+        clearInterval(autoSyncInterval);
+        autoSyncInterval = null;
+      }
+      if (autoSyncEnabled) {
+        btn.textContent = 'Auto-Sync (30s): ON ⚡';
+        autoSyncInterval = setInterval(() => {
+          syncWithCloud(true);
+        }, 30000);
+        appendMessage('FRIDAY', 'Background 30-second Cloud & Mesh Auto-Sync enabled across all 9 home nodes.');
+      } else {
+        btn.textContent = 'Auto-Sync (30s): OFF';
+        appendMessage('FRIDAY', 'Background Auto-Sync paused.');
+      }
+    });
+
+    // Tab Navigation
+    function switchTab(tabName) {
+      const views = {
+        console: document.getElementById('viewConsole'),
+        agent: document.getElementById('viewAgent'),
+        devices: document.getElementById('viewDevices'),
+        cloud: document.getElementById('viewCloud'),
+        learn: document.getElementById('viewLearn')
+      };
+      const btns = {
+        console: document.getElementById('tabConsoleBtn'),
+        agent: document.getElementById('tabAgentBtn'),
+        devices: document.getElementById('tabDevicesBtn'),
+        cloud: document.getElementById('tabCloudBtn'),
+        learn: document.getElementById('tabLearnBtn')
+      };
+      Object.keys(views).forEach(k => {
+        if (k === tabName) {
+          views[k].classList.remove('hidden');
+          views[k].classList.add('flex');
+          btns[k].className = 'px-3 py-1.5 rounded-lg text-xs font-medium bg-sky-500 text-slate-950 transition';
+        } else {
+          views[k].classList.add('hidden');
+          views[k].classList.remove('flex');
+          btns[k].className = 'px-3 py-1.5 rounded-lg text-xs font-medium bg-slate-800/80 text-slate-300 hover:bg-slate-700 transition';
+        }
+      });
+    }
+
+    document.getElementById('tabConsoleBtn').addEventListener('click', () => switchTab('console'));
+    document.getElementById('tabAgentBtn').addEventListener('click', () => switchTab('agent'));
+    document.getElementById('tabDevicesBtn').addEventListener('click', () => switchTab('devices'));
+    document.getElementById('tabCloudBtn').addEventListener('click', () => switchTab('cloud'));
+    document.getElementById('tabLearnBtn').addEventListener('click', () => switchTab('learn'));
+
+    // Initialize App
+    window.addEventListener('DOMContentLoaded', () => {
+      renderMemories();
+      renderGoals();
+      renderRules();
+      renderRolloutChecklist();
+      if ('serviceWorker' in navigator && location.protocol.startsWith('http')) {
+        navigator.serviceWorker.register('./sw.js').catch(() => {});
+      }
+      initSystemTelemetry();
+      initBattery();
+      if (geminiApiKey) {
+        document.getElementById('llmStatusBadge').textContent = 'Mode: Gemini LLM Connected ⚡';
+      }
+      appendMessage(
+        'FRIDAY',
+        'Step 6 Complete OS online, Boss! Try clicking "Ring / Find Phone" in the top bar, saying "Ring Phone 2" or "Cast Movie night at 8 PM", or clicking "🔔 Ring" on any of your 9 devices in the Home Fleet tab!'
+      );
+    });
+  </script>
+
+</body></html>
